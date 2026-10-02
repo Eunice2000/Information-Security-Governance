@@ -1,0 +1,40 @@
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.561:474) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.561:474) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.561:474) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.561:474) : arch=aarch64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=ubuntu euid=root suid=root fsuid=root egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.562:477) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.562:477) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.562:477) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.562:477) : arch=aarch64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=ubuntu euid=root suid=root fsuid=root egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.562:479) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.562:479) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.562:479) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.562:479) : arch=aarch64 syscall=openat success=yes exit=8 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=ubuntu euid=root suid=root fsuid=root egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.565:480) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.565:480) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.565:480) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.565:480) : arch=aarch64 syscall=openat success=yes exit=13 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.565:482) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.565:482) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.565:482) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.565:482) : arch=aarch64 syscall=openat success=yes exit=13 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.565:483) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.565:483) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.565:483) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.565:483) : arch=aarch64 syscall=openat success=yes exit=13 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.565:484) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.565:484) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.565:484) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.565:484) : arch=aarch64 syscall=openat success=yes exit=13 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.565:485) : proctitle=sudo ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.565:485) : item=0 name=/etc/passwd inode=87897 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.565:485) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=SYSCALL msg=audit(10/02/26 21:31:00.565:485) : arch=aarch64 syscall=openat success=yes exit=13 a0=AT_FDCWD a1=0xf72255e14898 a2=O_RDONLY|O_CLOEXEC a3=0x0 items=1 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=passwd_changes 

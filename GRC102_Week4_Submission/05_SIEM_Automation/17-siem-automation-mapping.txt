@@ -1,0 +1,42 @@
+GRC102 Week 4 - SIEM and Continuous Monitoring Mapping
+
+1. auditd
+Evidence Source: Linux audit logs
+Example Evidence: Changes or access to sensitive files, program execution and authentication-related activity.
+SIEM Use: Forward audit events to the SIEM for centralized collection, correlation and alerting.
+Operational Alert: Unexpected modification of sensitive files or suspicious program execution.
+Governance Escalation: Required audit rules are disabled, missing or repeatedly fail to generate evidence.
+Control Objective: Maintain reliable audit trails for security-relevant system activity.
+
+2. Authentication and Privileged Access Logs
+Evidence Source: /var/log/auth.log and journalctl
+Example Evidence: SSH authentication, sudo commands, failed logins and privileged sessions.
+SIEM Use: Correlate authentication events to identify repeated failures, unusual privileged access or suspicious login patterns.
+Operational Alert: Multiple failed authentication attempts or unexpected sudo activity.
+Governance Escalation: Persistent authentication-control failures, unexplained privileged access or inadequate logging.
+Control Objective: Detect and maintain accountability for authentication and privileged activity.
+
+3. System Logs
+Evidence Source: journalctl and syslog
+Example Evidence: Service failures, system warnings, kernel events and security-relevant errors.
+SIEM Use: Centralize system events and correlate recurring errors or abnormal service behaviour.
+Operational Alert: Security-critical service failure or unusual system event.
+Governance Escalation: Repeated control-related failures, prolonged logging outages or unresolved high-risk conditions.
+Control Objective: Maintain visibility of system health and security-relevant events.
+
+4. Lynis Security Assessment
+Evidence Source: Lynis report and log
+Example Evidence: Vulnerable packages, package repository warning, firewall configuration warning and hardening recommendations.
+SIEM/Monitoring Use: Findings can feed vulnerability and control-monitoring dashboards for tracking and remediation.
+Operational Alert: Newly identified critical or high-risk technical weakness.
+Governance Escalation: High-risk findings remain unresolved beyond approved remediation timelines or repeatedly reappear.
+Control Objective: Identify, track and remediate security configuration and vulnerability weaknesses.
+
+5. Continuous Control Monitoring
+Evidence Source: Aggregated audit, authentication, system and vulnerability evidence.
+Automation Use: Automated checks can verify that auditd remains enabled, required rules remain loaded, security events are logged, vulnerabilities are tracked and remediation deadlines are met.
+KPI/KRI Examples: Number of overdue high-risk findings, repeated authentication failures, missing audit rules, unresolved vulnerable packages and logging availability.
+Governance Escalation: Threshold breaches, repeated control failures or overdue remediation should be assigned to the relevant control owner and escalated according to risk severity.
+
+Conclusion
+A SIEM provides centralized collection, correlation and alerting, while continuous control monitoring uses technical evidence to determine whether security controls continue to operate as intended. Individual technical events may initially require operational investigation, while repeated failures, control gaps, threshold breaches and overdue remediation should be escalated through governance and control-assurance processes.

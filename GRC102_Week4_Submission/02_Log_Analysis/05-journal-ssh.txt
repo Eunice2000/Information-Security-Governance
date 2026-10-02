@@ -1,0 +1,10 @@
+Oct 02 21:20:46 grc102-week4 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Oct 02 21:20:46 grc102-week4 sshd[998]: Server listening on 0.0.0.0 port 22.
+Oct 02 21:20:46 grc102-week4 sshd[998]: Server listening on :: port 22.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Oct 02 21:20:46 grc102-week4 sshd[999]: Accepted publickey for ubuntu from 192.168.252.1 port 55249 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+Oct 02 21:20:46 grc102-week4 sshd[999]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Oct 02 21:21:30 grc102-week4 sshd[1514]: Accepted publickey for ubuntu from 192.168.252.1 port 55433 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+Oct 02 21:21:30 grc102-week4 sshd[1514]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Oct 02 21:46:10 grc102-week4 sshd[2662]: Accepted publickey for ubuntu from 192.168.252.1 port 61679 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+Oct 02 21:46:10 grc102-week4 sshd[2662]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)

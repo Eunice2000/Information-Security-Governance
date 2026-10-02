@@ -1,0 +1,9 @@
+2026-10-02T20:20:46.942913+00:00 grc102-week4 sshd[998]: Server listening on 0.0.0.0 port 22.
+2026-10-02T20:20:46.942992+00:00 grc102-week4 sshd[998]: Server listening on :: port 22.
+2026-10-02T20:20:46.978998+00:00 grc102-week4 sshd[999]: Accepted publickey for ubuntu from 192.168.252.1 port 55249 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+2026-10-02T20:20:46.980162+00:00 grc102-week4 sshd[999]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-02T20:21:30.416783+00:00 grc102-week4 sshd[1514]: Accepted publickey for ubuntu from 192.168.252.1 port 55433 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+2026-10-02T20:21:30.422179+00:00 grc102-week4 sshd[1514]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-02T20:46:10.438687+00:00 grc102-week4 sshd[2662]: Accepted publickey for ubuntu from 192.168.252.1 port 61679 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+2026-10-02T20:46:10.441748+00:00 grc102-week4 sshd[2662]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-02T21:01:59.695550+00:00 grc102-week4 sudo:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log

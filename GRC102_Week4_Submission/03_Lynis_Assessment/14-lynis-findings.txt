@@ -1,0 +1,35 @@
+GRC102 Week 4 - Lynis Security Assessment Findings
+
+Assessment Summary
+Lynis Version: 3.0.9
+Hardening Index: 60
+Tests Performed: 257
+Warnings Identified: 3
+Suggestions Identified: 45
+
+Finding 1 - Security Repository Not Detected
+Evidence: Lynis warning PKGS-7388 - "Can't find any security repository in /etc/apt/sources.list or sources.list.d directory."
+Risk/Control Issue: The system may not have an appropriately detected security-update source, which could affect timely receipt of security patches. This requires validation of the configured Ubuntu package sources.
+Likely Owner: Linux/System Administrator
+Priority: High
+Recommended Action: Review the configured APT repositories, confirm that the appropriate Ubuntu security repository is enabled and functioning, and correct the configuration if required.
+Retest: Re-run the relevant Lynis package-management check and verify the configured APT security sources.
+
+Finding 2 - Vulnerable Packages Detected
+Evidence: Lynis warning PKGS-7392 - "Found one or more vulnerable packages."
+Risk/Control Issue: Known vulnerable software may increase the likelihood of exploitation if affected packages remain unpatched.
+Likely Owner: Linux/System Administrator / Vulnerability Management
+Priority: High
+Recommended Action: Identify the affected packages, assess applicable security updates, and apply approved updates according to the patch-management process.
+Retest: Re-run package vulnerability checks and Lynis to confirm that identified vulnerable packages have been remediated.
+
+Finding 3 - iptables Loaded Without Active Rules
+Evidence: Lynis warning FIRE-4512 - "iptables module(s) loaded, but no rules active."
+Risk/Control Issue: Host-level network filtering may not be adequately enforced through iptables. The actual firewall architecture should be validated before concluding that the host is unprotected.
+Likely Owner: Linux/System Administrator / Security Operations
+Priority: Moderate
+Recommended Action: Review the intended host firewall configuration and confirm whether another firewall framework provides the required filtering. Where iptables controls are required, implement approved rules based on the system's network requirements.
+Retest: Review the active firewall ruleset and re-run the Lynis firewall check.
+
+Conclusion
+The Lynis assessment produced a hardening index of 60 and identified three explicit warnings requiring review. Remediation should be risk-based and validated against the intended system configuration before changes are implemented.

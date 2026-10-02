@@ -1,0 +1,36 @@
+GRC102 Week 4 - Linux Log Event Review Table
+
+Event / Condition: Successful SSH public-key authentication
+Evidence Source: /var/log/auth.log and journalctl SSH logs
+Time: Observed during the Week 4 practical on 02 October 2026
+User / Service: ubuntu / sshd
+Security Significance: Confirms that remote authentication activity is being logged and can be attributed to a user and source connection.
+Recommended Action: Continue monitoring successful and failed SSH authentication and investigate unexpected source addresses or accounts.
+
+Event / Condition: Privileged sudo activity
+Evidence Source: /var/log/auth.log
+Time: Observed during the Week 4 practical on 02 October 2026
+User / Service: ubuntu / sudo
+Security Significance: Provides an audit trail of privileged commands and supports accountability for administrative activity.
+Recommended Action: Monitor privileged commands and investigate unauthorized or unusual sudo activity.
+
+Event / Condition: System warning events
+Evidence Source: journalctl priority warning
+Time: Observed during the Week 4 practical on 02 October 2026
+User / Service: System/kernel services
+Security Significance: Warning-level events may identify configuration, availability or security conditions requiring technical review.
+Recommended Action: Review recurring warnings, determine their operational or security relevance and escalate material conditions.
+
+Event / Condition: Error-priority log review
+Evidence Source: journalctl priority err
+Time: Reviewed during the Week 4 practical on 02 October 2026
+User / Service: System services
+Security Significance: No error-priority entries were returned during the review period.
+Recommended Action: Continue periodic monitoring for error-priority events.
+
+Event / Condition: Failed-password review
+Evidence Source: /var/log/auth.log
+Time: Reviewed during the Week 4 practical on 02 October 2026
+User / Service: Authentication services
+Security Significance: No confirmed failed-password authentication attempts were identified during the review. The grep search itself appeared in the sudo audit trail and should not be interpreted as a failed login.
+Recommended Action: Continue monitoring failed authentication attempts and investigate repeated failures or abnormal patterns.

@@ -1,0 +1,29 @@
+
+Summary Report
+======================
+Range of time in logs: 10/02/26 21:22:08.270 - 10/02/26 21:30:28.878
+Selected time for report: 10/02/26 21:22:08 - 10/02/26 21:30:28.878
+Number of changes in configuration: 11
+Number of changes to accounts, groups, or roles: 0
+Number of logins: 0
+Number of failed logins: 0
+Number of authentications: 0
+Number of failed authentications: 0
+Number of users: 3
+Number of terminals: 7
+Number of host names: 1
+Number of executables: 13
+Number of commands: 13
+Number of files: 16
+Number of AVC's: 0
+Number of MAC events: 0
+Number of failed syscalls: 2
+Number of anomaly events: 0
+Number of responses to anomaly events: 0
+Number of crypto events: 0
+Number of integrity events: 0
+Number of virt events: 0
+Number of keys: 4
+Number of process IDs: 34
+Number of events: 301
+

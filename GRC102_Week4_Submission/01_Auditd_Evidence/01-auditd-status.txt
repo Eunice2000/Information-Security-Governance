@@ -1,0 +1,22 @@
+● auditd.service - Security Auditing Service
+     Loaded: loaded (/usr/lib/systemd/system/auditd.service; enabled; preset: enabled)
+     Active: active (running) since Fri 2026-10-02 21:22:08 WAT; 4s ago
+       Docs: man:auditd(8)
+             https://github.com/linux-audit/audit-documentation
+   Main PID: 2172 (auditd)
+      Tasks: 2 (limit: 2259)
+     Memory: 420.0K (peak: 2.2M)
+        CPU: 10ms
+     CGroup: /system.slice/auditd.service
+             └─2172 /sbin/auditd
+
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: enabled 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: failure 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: pid 2172
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: rate_limit 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_limit 8192
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: lost 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog 4
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time 60000
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time_actual 0
+Oct 02 21:22:08 grc102-week4 systemd[1]: Started auditd.service - Security Auditing Service.

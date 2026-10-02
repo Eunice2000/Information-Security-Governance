@@ -1,0 +1,19 @@
+GRC102 Week 4 - Linux Log Review Analysis
+
+1. Journal Error Review
+No entries were identified at error priority or higher during the review period.
+
+2. Warning Review
+System warnings were identified, including KASLR, IMA, GPT partition, cron configuration, and audit callback messages. These demonstrate the use of journalctl for identifying system events requiring investigation.
+
+3. Authentication Review
+No confirmed failed-password authentication attempts were identified. The matching entries in auth.log relate to the sudo grep command used during the review.
+
+4. Privileged Activity
+The authentication log records sudo activity, including the user, terminal, working directory, target user, and command executed. This provides an audit trail for privileged administrative activity.
+
+5. SSH Activity
+The SSH logs show successful public-key authentication for the ubuntu account from 192.168.252.1 and subsequent session creation.
+
+Conclusion
+Linux system and authentication logs provide evidence that can support security monitoring, investigation, accountability, and audit review.

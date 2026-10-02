@@ -1,0 +1,46 @@
+GRC102 Week 4 - Control Monitoring and Governance Table
+
+1. Control / Objective: Security auditing of sensitive system activity
+Evidence: auditd enabled; custom audit rules monitor /etc/passwd, /etc/shadow, authentication logs and program execution.
+Owner: Linux/System Administrator
+Observed Status: Operating
+KPI/KRI or Threshold: auditd should remain active and required audit rules should remain loaded.
+Risk / Significance: Missing or disabled audit coverage could reduce accountability and prevent investigation of security-relevant activity.
+Remediation: Periodically verify auditd status and required audit rules.
+Retest / Follow-up: Confirm auditd is active, list loaded rules and query audit events using ausearch.
+
+2. Control / Objective: Authentication and privileged-access monitoring
+Evidence: /var/log/auth.log recorded sudo activity and successful SSH public-key authentication for the ubuntu account.
+Owner: Linux/System Administrator / Security Operations
+Observed Status: Operating
+KPI/KRI or Threshold: Privileged and authentication activity should be logged; repeated failed authentication or unexpected privileged activity should trigger investigation.
+Risk / Significance: Inadequate monitoring could allow unauthorized access or privileged activity to go undetected.
+Remediation: Continue authentication-log monitoring and establish alerting for abnormal authentication and privilege-use patterns.
+Retest / Follow-up: Review auth.log/journal evidence and verify relevant authentication and sudo events remain recorded.
+
+3. Control / Objective: Vulnerability and patch management
+Evidence: Lynis warning PKGS-7392 identified one or more vulnerable packages.
+Owner: Linux/System Administrator / Vulnerability Management
+Observed Status: Requires Remediation
+KPI/KRI or Threshold: Known vulnerable packages should be assessed and remediated within approved patch-management timelines.
+Risk / Significance: Unpatched vulnerable packages may expose the system to known security weaknesses.
+Remediation: Identify affected packages and apply approved security updates.
+Retest / Follow-up: Re-run package vulnerability checks and Lynis after remediation.
+
+4. Control / Objective: Secure package-update configuration
+Evidence: Lynis warning PKGS-7388 could not identify a security repository in the configured APT sources.
+Owner: Linux/System Administrator
+Observed Status: Requires Validation
+KPI/KRI or Threshold: Approved security-update repositories should be configured and accessible.
+Risk / Significance: Incorrect repository configuration may prevent timely delivery of security updates.
+Remediation: Validate APT repository configuration and confirm the appropriate Ubuntu security source is enabled and functioning.
+Retest / Follow-up: Verify configured APT sources and re-run the relevant Lynis check.
+
+5. Control / Objective: Host network filtering
+Evidence: Lynis warning FIRE-4512 reported iptables modules loaded without active rules; Lynis also reported a host-based firewall as active.
+Owner: Linux/System Administrator / Security Operations
+Observed Status: Requires Validation
+KPI/KRI or Threshold: Host network filtering should operate according to the approved firewall baseline and required services.
+Risk / Significance: Missing or ineffective network-filtering rules may increase unnecessary network exposure.
+Remediation: Confirm the intended firewall architecture and validate that required filtering controls are active.
+Retest / Follow-up: Review the effective firewall ruleset and re-run the Lynis firewall assessment.

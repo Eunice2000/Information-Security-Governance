@@ -1,0 +1,40 @@
+type=PATH msg=audit(10/02/26 21:31:00.546:470) : item=1 name=/lib/ld-linux-aarch64.so.1 inode=6227 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(10/02/26 21:31:00.546:470) : item=0 name=/usr/bin/sudo inode=2094 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.546:470) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=EXECVE msg=audit(10/02/26 21:31:00.546:470) : argc=7 a0=sudo a1=ausearch a2=-k a3=passwd_changes a4=-i a5=--start a6=today 
+type=SYSCALL msg=audit(10/02/26 21:31:00.546:470) : arch=aarch64 syscall=execve success=yes exit=0 a0=0xc2f148ca19b0 a1=0xc2f148d19660 a2=0xc2f148d8d9e0 a3=0xf9f64c79db50 items=2 ppid=1562 pid=2613 auid=ubuntu uid=ubuntu gid=ubuntu euid=root suid=root fsuid=root egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=program_execution 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:00.567:487) : proctitle=ausearch -k passwd_changes -i --start today 
+type=PATH msg=audit(10/02/26 21:31:00.567:487) : item=1 name=/lib/ld-linux-aarch64.so.1 inode=6227 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(10/02/26 21:31:00.567:487) : item=0 name=/usr/sbin/ausearch inode=87985 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:00.567:487) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=EXECVE msg=audit(10/02/26 21:31:00.567:487) : argc=6 a0=ausearch a1=-k a2=passwd_changes a3=-i a4=--start a5=today 
+type=SYSCALL msg=audit(10/02/26 21:31:00.567:487) : arch=aarch64 syscall=execve success=yes exit=0 a0=0xaf867fd5bca8 a1=0xaf867fd50870 a2=0xaf867fd5e800 a3=0xaf867fd5e800 items=2 ppid=2616 pid=2617 auid=ubuntu uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=3 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined key=program_execution 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:20.111:492) : proctitle=tail -40 
+type=PATH msg=audit(10/02/26 21:31:20.111:492) : item=1 name=/lib/ld-linux-aarch64.so.1 inode=6227 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(10/02/26 21:31:20.111:492) : item=0 name=/usr/bin/tail inode=1937 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:20.111:492) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=EXECVE msg=audit(10/02/26 21:31:20.111:492) : argc=2 a0=tail a1=-40 
+type=SYSCALL msg=audit(10/02/26 21:31:20.111:492) : arch=aarch64 syscall=execve success=yes exit=0 a0=0xc2f148cb3570 a1=0xc2f148d12ad0 a2=0xc2f148d8d9e0 a3=0xf9f64c79db50 items=2 ppid=1562 pid=2619 auid=ubuntu uid=ubuntu gid=ubuntu euid=ubuntu suid=ubuntu fsuid=ubuntu egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=tail exe=/usr/bin/tail subj=unconfined key=program_execution 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:20.113:490) : proctitle=tee 03-program-events-readable.txt 
+type=PATH msg=audit(10/02/26 21:31:20.113:490) : item=1 name=/lib/ld-linux-aarch64.so.1 inode=6227 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(10/02/26 21:31:20.113:490) : item=0 name=/usr/bin/tee inode=1938 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:20.113:490) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=EXECVE msg=audit(10/02/26 21:31:20.113:490) : argc=2 a0=tee a1=03-program-events-readable.txt 
+type=SYSCALL msg=audit(10/02/26 21:31:20.113:490) : arch=aarch64 syscall=execve success=yes exit=0 a0=0xc2f148ca3ac0 a1=0xc2f148d12ad0 a2=0xc2f148d8d9e0 a3=0xf9f64c79db50 items=2 ppid=1562 pid=2620 auid=ubuntu uid=ubuntu gid=ubuntu euid=ubuntu suid=ubuntu fsuid=ubuntu egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=tee exe=/usr/bin/tee subj=unconfined key=program_execution 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:20.114:491) : proctitle=sudo ausearch -k program_execution -i --start today 
+type=PATH msg=audit(10/02/26 21:31:20.114:491) : item=1 name=/lib/ld-linux-aarch64.so.1 inode=6227 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(10/02/26 21:31:20.114:491) : item=0 name=/usr/bin/sudo inode=2094 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:20.114:491) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=EXECVE msg=audit(10/02/26 21:31:20.114:491) : argc=7 a0=sudo a1=ausearch a2=-k a3=program_execution a4=-i a5=--start a6=today 
+type=SYSCALL msg=audit(10/02/26 21:31:20.114:491) : arch=aarch64 syscall=execve success=yes exit=0 a0=0xc2f148da8e60 a1=0xc2f148d19660 a2=0xc2f148d8d9e0 a3=0xf9f64c79db50 items=2 ppid=1562 pid=2618 auid=ubuntu uid=ubuntu gid=ubuntu euid=root suid=root fsuid=root egid=ubuntu sgid=ubuntu fsgid=ubuntu tty=pts0 ses=3 comm=sudo exe=/usr/bin/sudo subj=unconfined key=program_execution 
+----
+type=PROCTITLE msg=audit(10/02/26 21:31:20.169:509) : proctitle=ausearch -k program_execution -i --start today 
+type=PATH msg=audit(10/02/26 21:31:20.169:509) : item=1 name=/lib/ld-linux-aarch64.so.1 inode=6227 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(10/02/26 21:31:20.169:509) : item=0 name=/usr/sbin/ausearch inode=87985 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(10/02/26 21:31:20.169:509) : cwd=/home/ubuntu/grc102-week4-evidence 
+type=EXECVE msg=audit(10/02/26 21:31:20.169:509) : argc=6 a0=ausearch a1=-k a2=program_execution a3=-i a4=--start a5=today 
+type=SYSCALL msg=audit(10/02/26 21:31:20.169:509) : arch=aarch64 syscall=execve success=yes exit=0 a0=0xb53a22229ca8 a1=0xb53a2221e870 a2=0xb53a2222c800 a3=0xb53a2222c800 items=2 ppid=2621 pid=2622 auid=ubuntu uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=3 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined key=program_execution 

@@ -1,0 +1,108 @@
+----
+time->Fri Oct  2 21:26:53 2026
+type=PROCTITLE msg=audit(1790972813.212:280): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SOCKADDR msg=audit(1790972813.212:280): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1790972813.212:280): arch=c00000b7 syscall=206 success=yes exit=1076 a0=3 a1=ffffdb14b040 a2=434 a3=0 items=0 ppid=2549 pid=2564 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1790972813.212:280): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="program_execution" list=4 res=1
+----
+time->Fri Oct  2 21:26:53 2026
+type=PROCTITLE msg=audit(1790972813.212:281): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SOCKADDR msg=audit(1790972813.212:281): saddr=100000000000000000000000
+type=SYSCALL msg=audit(1790972813.212:281): arch=c00000b7 syscall=206 success=yes exit=1076 a0=3 a1=ffffdb14b040 a2=434 a3=0 items=0 ppid=2549 pid=2564 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=CONFIG_CHANGE msg=audit(1790972813.212:281): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="program_execution" list=4 res=1
+----
+time->Fri Oct  2 21:27:05 2026
+type=PROCTITLE msg=audit(1790972825.594:286): proctitle=7375646F00617564697463746C002D6C
+type=PATH msg=audit(1790972825.594:286): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972825.594:286): item=0 name="/usr/bin/sudo" inode=2094 dev=08:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972825.594:286): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972825.594:286): argc=3 a0="sudo" a1="auditctl" a2="-l"
+type=SYSCALL msg=audit(1790972825.594:286): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d2a490 a1=c2f148c9fc10 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2573 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:27:05 2026
+type=PROCTITLE msg=audit(1790972825.594:287): proctitle=7465650030322D6163746976652D61756469742D72756C65732E747874
+type=PATH msg=audit(1790972825.594:287): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972825.594:287): item=0 name="/usr/bin/tee" inode=1938 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972825.594:287): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972825.594:287): argc=2 a0="tee" a1="02-active-audit-rules.txt"
+type=SYSCALL msg=audit(1790972825.594:287): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d15560 a1=c2f148da7a30 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2574 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="tee" exe="/usr/bin/tee" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:27:05 2026
+type=PROCTITLE msg=audit(1790972825.624:304): proctitle=617564697463746C002D6C
+type=PATH msg=audit(1790972825.624:304): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972825.624:304): item=0 name="/usr/sbin/auditctl" inode=87977 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972825.624:304): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972825.624:304): argc=2 a0="auditctl" a1="-l"
+type=SYSCALL msg=audit(1790972825.624:304): arch=c00000b7 syscall=221 success=yes exit=0 a0=c977bc94ac58 a1=c977bc93fb50 a2=c977bc94d7b0 a3=c977bc94d7b0 items=2 ppid=2575 pid=2576 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:27:20 2026
+type=PROCTITLE msg=audit(1790972840.772:308): proctitle=7375646F006E616E6F002F6574632F706173737764
+type=PATH msg=audit(1790972840.772:308): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972840.772:308): item=0 name="/usr/bin/sudo" inode=2094 dev=08:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972840.772:308): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972840.772:308): argc=3 a0="sudo" a1="nano" a2="/etc/passwd"
+type=SYSCALL msg=audit(1790972840.772:308): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148da00d0 a1=c2f148da9730 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2579 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:27:20 2026
+type=PROCTITLE msg=audit(1790972840.819:325): proctitle=6E616E6F002F6574632F706173737764
+type=PATH msg=audit(1790972840.819:325): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972840.819:325): item=0 name="/usr/bin/nano" inode=2325 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972840.819:325): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972840.819:325): argc=2 a0="nano" a1="/etc/passwd"
+type=SYSCALL msg=audit(1790972840.819:325): arch=c00000b7 syscall=221 success=yes exit=0 a0=c3f82d0571e8 a1=c3f82d067b50 a2=c3f82d0757b0 a3=c3f82d0757b0 items=2 ppid=2580 pid=2581 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="nano" exe="/usr/bin/nano" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:27:46 2026
+type=PROCTITLE msg=audit(1790972866.640:333): proctitle=6C73002D2D636F6C6F723D6175746F002F746D70
+type=PATH msg=audit(1790972866.640:333): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972866.640:333): item=0 name="/usr/bin/ls" inode=1749 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972866.640:333): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972866.640:333): argc=3 a0="ls" a1="--color=auto" a2="/tmp"
+type=SYSCALL msg=audit(1790972866.640:333): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d12ab0 a1=c2f148cb7aa0 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2582 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="ls" exe="/usr/bin/ls" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:28:03 2026
+type=PROCTITLE msg=audit(1790972883.945:334): proctitle=7375646F006175736561726368002D6B007061737377645F6368616E676573
+type=PATH msg=audit(1790972883.945:334): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972883.945:334): item=0 name="/usr/bin/sudo" inode=2094 dev=08:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972883.945:334): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972883.945:334): argc=4 a0="sudo" a1="ausearch" a2="-k" a3="passwd_changes"
+type=SYSCALL msg=audit(1790972883.945:334): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d86c00 a1=c2f148d088a0 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2583 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:28:03 2026
+type=PROCTITLE msg=audit(1790972883.946:335): proctitle=7465650030332D7061737377642D6576656E74732E747874
+type=PATH msg=audit(1790972883.946:335): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972883.946:335): item=0 name="/usr/bin/tee" inode=1938 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972883.946:335): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972883.946:335): argc=2 a0="tee" a1="03-passwd-events.txt"
+type=SYSCALL msg=audit(1790972883.946:335): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d41d10 a1=c2f148d12ad0 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2584 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="tee" exe="/usr/bin/tee" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:28:03 2026
+type=PROCTITLE msg=audit(1790972883.976:352): proctitle=6175736561726368002D6B007061737377645F6368616E676573
+type=PATH msg=audit(1790972883.976:352): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972883.976:352): item=0 name="/usr/sbin/ausearch" inode=87985 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972883.976:352): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972883.976:352): argc=3 a0="ausearch" a1="-k" a2="passwd_changes"
+type=SYSCALL msg=audit(1790972883.976:352): arch=c00000b7 syscall=221 success=yes exit=0 a0=baa3373dcc68 a1=baa3373d1b50 a2=baa3373df7c0 a3=baa3373df7c0 items=2 ppid=2585 pid=2586 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="ausearch" exe="/usr/sbin/ausearch" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:28:03 2026
+type=PROCTITLE msg=audit(1790972883.989:355): proctitle=7465650030332D70726F6772616D2D657865637574696F6E2D6576656E74732E747874
+type=PATH msg=audit(1790972883.989:355): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972883.989:355): item=0 name="/usr/bin/tee" inode=1938 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972883.989:355): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972883.989:355): argc=2 a0="tee" a1="03-program-execution-events.txt"
+type=SYSCALL msg=audit(1790972883.989:355): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d86be0 a1=c2f148d12ad0 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2588 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="tee" exe="/usr/bin/tee" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:28:03 2026
+type=PROCTITLE msg=audit(1790972883.989:356): proctitle=7375646F006175736561726368002D6B0070726F6772616D5F657865637574696F6E
+type=PATH msg=audit(1790972883.989:356): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972883.989:356): item=0 name="/usr/bin/sudo" inode=2094 dev=08:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972883.989:356): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972883.989:356): argc=4 a0="sudo" a1="ausearch" a2="-k" a3="program_execution"
+type=SYSCALL msg=audit(1790972883.989:356): arch=c00000b7 syscall=221 success=yes exit=0 a0=c2f148d167b0 a1=c2f148d7ddc0 a2=c2f148d8d9e0 a3=f9f64c79db50 items=2 ppid=1562 pid=2587 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=3 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="program_execution"
+----
+time->Fri Oct  2 21:28:03 2026
+type=PROCTITLE msg=audit(1790972883.999:373): proctitle=6175736561726368002D6B0070726F6772616D5F657865637574696F6E
+type=PATH msg=audit(1790972883.999:373): item=1 name="/lib/ld-linux-aarch64.so.1" inode=6227 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1790972883.999:373): item=0 name="/usr/sbin/ausearch" inode=87985 dev=08:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1790972883.999:373): cwd="/home/ubuntu/grc102-week4-evidence"
+type=EXECVE msg=audit(1790972883.999:373): argc=3 a0="ausearch" a1="-k" a2="program_execution"
+type=SYSCALL msg=audit(1790972883.999:373): arch=c00000b7 syscall=221 success=yes exit=0 a0=c95405667c68 a1=c9540565cb50 a2=c9540566a7c0 a3=c9540566a7c0 items=2 ppid=2589 pid=2590 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="ausearch" exe="/usr/sbin/ausearch" subj=unconfined key="program_execution"

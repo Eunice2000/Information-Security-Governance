@@ -1,0 +1,1245 @@
+Oct 02 21:20:39 ubuntu kernel: Booting Linux on physical CPU 0x0000000000 [0x610f0000]
+Oct 02 21:20:39 ubuntu kernel: Linux version 6.8.0-142-generic (buildd@bos03-arm64-111) (aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #142-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:30:29 UTC 2026 (Ubuntu 6.8.0-142.142-generic 6.8.12)
+Oct 02 21:20:39 ubuntu kernel: KASLR disabled due to lack of seed
+Oct 02 21:20:39 ubuntu kernel: efi: EFI v2.7 by EDK II
+Oct 02 21:20:39 ubuntu kernel: efi: SMBIOS 3.0=0xbfed0000 MEMATTR=0xbe87b018 ACPI 2.0=0xbc6f0018 MOKvar=0xbc460000 INITRD=0xbcb41498 MEMRESERVE=0xbcb43898 
+Oct 02 21:20:39 ubuntu kernel: secureboot: Secure boot disabled
+Oct 02 21:20:39 ubuntu kernel: ACPI: Early table checksum verification disabled
+Oct 02 21:20:39 ubuntu kernel: ACPI: RSDP 0x00000000BC6F0018 000024 (v02 BOCHS )
+Oct 02 21:20:39 ubuntu kernel: ACPI: XSDT 0x00000000BC6FFE98 000064 (v01 BOCHS  BXPC     00000001      01000013)
+Oct 02 21:20:39 ubuntu kernel: ACPI: FACP 0x00000000BC6FFA98 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: DSDT 0x00000000BC6F7518 001436 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: APIC 0x00000000BC6FFC18 000108 (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: PPTT 0x00000000BC6FFD98 000060 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: GTDT 0x00000000BC6FD898 000060 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: MCFG 0x00000000BC6FFF98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: SPCR 0x00000000BC6FE818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: DBG2 0x00000000BC6FE898 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: IORT 0x00000000BC6FE418 000080 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 02 21:20:39 ubuntu kernel: ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+Oct 02 21:20:39 ubuntu kernel: NUMA: Failed to initialise from firmware
+Oct 02 21:20:39 ubuntu kernel: NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
+Oct 02 21:20:39 ubuntu kernel: NUMA: NODE_DATA [mem 0xbfa4d5c0-0xbfa52fff]
+Oct 02 21:20:39 ubuntu kernel: Zone ranges:
+Oct 02 21:20:39 ubuntu kernel:   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+Oct 02 21:20:39 ubuntu kernel:   DMA32    empty
+Oct 02 21:20:39 ubuntu kernel:   Normal   empty
+Oct 02 21:20:39 ubuntu kernel:   Device   empty
+Oct 02 21:20:39 ubuntu kernel: Movable zone start for each node
+Oct 02 21:20:39 ubuntu kernel: Early memory node ranges
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x0000000040000000-0x00000000bc45ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bc460000-0x00000000bc46ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bc470000-0x00000000bc57ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bc580000-0x00000000bc58ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bc590000-0x00000000bc76ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bc770000-0x00000000bcb3ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bcb40000-0x00000000bfe1ffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bfe20000-0x00000000bfeaffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bfeb0000-0x00000000bfebffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bfec0000-0x00000000bffdffff]
+Oct 02 21:20:39 ubuntu kernel:   node   0: [mem 0x00000000bffe0000-0x00000000bfffffff]
+Oct 02 21:20:39 ubuntu kernel: Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+Oct 02 21:20:39 ubuntu kernel: cma: Reserved 32 MiB at 0x00000000b8400000 on node -1
+Oct 02 21:20:39 ubuntu kernel: psci: probing for conduit method from ACPI.
+Oct 02 21:20:39 ubuntu kernel: psci: PSCIv1.1 detected in firmware.
+Oct 02 21:20:39 ubuntu kernel: psci: Using standard PSCI v0.2 function IDs
+Oct 02 21:20:39 ubuntu kernel: psci: Trusted OS migration not required
+Oct 02 21:20:39 ubuntu kernel: psci: SMC Calling Convention v1.0
+Oct 02 21:20:39 ubuntu kernel: percpu: Embedded 54 pages/cpu s95144 r8192 d117848 u221184
+Oct 02 21:20:39 ubuntu kernel: pcpu-alloc: s95144 r8192 d117848 u221184 alloc=54*4096
+Oct 02 21:20:39 ubuntu kernel: pcpu-alloc: [0] 0 [0] 1 
+Oct 02 21:20:39 ubuntu kernel: Detected PIPT I-cache on CPU0
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Address authentication (IMP DEF algorithm)
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Spectre-v4
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Spectre-BHB
+Oct 02 21:20:39 ubuntu kernel: alternatives: applying boot alternatives
+Oct 02 21:20:39 ubuntu kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-142-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyAMA0
+Oct 02 21:20:39 ubuntu kernel: Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: Fallback order for Node 0: 0 
+Oct 02 21:20:39 ubuntu kernel: Built 1 zonelists, mobility grouping on.  Total pages: 516096
+Oct 02 21:20:39 ubuntu kernel: Policy zone: DMA
+Oct 02 21:20:39 ubuntu kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Oct 02 21:20:39 ubuntu kernel: software IO TLB: SWIOTLB bounce buffer size adjusted to 2MB
+Oct 02 21:20:39 ubuntu kernel: software IO TLB: area num 2.
+Oct 02 21:20:39 ubuntu kernel: software IO TLB: mapped [mem 0x00000000bf4c9000-0x00000000bf6c9000] (2MB)
+Oct 02 21:20:39 ubuntu kernel: Memory: 1928484K/2097152K available (23552K kernel code, 5212K rwdata, 16456K rodata, 12288K init, 1234K bss, 135900K reserved, 32768K cma-reserved)
+Oct 02 21:20:39 ubuntu kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Oct 02 21:20:39 ubuntu kernel: ftrace: allocating 63082 entries in 247 pages
+Oct 02 21:20:39 ubuntu kernel: ftrace: allocated 247 pages with 7 groups
+Oct 02 21:20:39 ubuntu kernel: Dynamic Preempt: voluntary
+Oct 02 21:20:39 ubuntu kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 02 21:20:39 ubuntu kernel: rcu:         RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=2.
+Oct 02 21:20:39 ubuntu kernel:         Trampoline variant of Tasks RCU enabled.
+Oct 02 21:20:39 ubuntu kernel:         Rude variant of Tasks RCU enabled.
+Oct 02 21:20:39 ubuntu kernel:         Tracing variant of Tasks RCU enabled.
+Oct 02 21:20:39 ubuntu kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Oct 02 21:20:39 ubuntu kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Oct 02 21:20:39 ubuntu kernel: RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 02 21:20:39 ubuntu kernel: RCU Tasks Rude: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 02 21:20:39 ubuntu kernel: RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 02 21:20:39 ubuntu kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Oct 02 21:20:39 ubuntu kernel: GICv3: 256 SPIs implemented
+Oct 02 21:20:39 ubuntu kernel: GICv3: 0 Extended SPIs implemented
+Oct 02 21:20:39 ubuntu kernel: Root IRQ handler: gic_handle_irq
+Oct 02 21:20:39 ubuntu kernel: GICv3: GICv3 features: 16 PPIs
+Oct 02 21:20:39 ubuntu kernel: GICv3: CPU0: found redistributor 0 region 0:0x00000000080a0000
+Oct 02 21:20:39 ubuntu kernel: ITS [mem 0x08080000-0x0809ffff]
+Oct 02 21:20:39 ubuntu kernel: ITS@0x0000000008080000: allocated 8192 Devices @40260000 (indirect, esz 8, psz 64K, shr 1)
+Oct 02 21:20:39 ubuntu kernel: ITS@0x0000000008080000: allocated 8192 Interrupt Collections @40270000 (flat, esz 8, psz 64K, shr 1)
+Oct 02 21:20:39 ubuntu kernel: GICv3: using LPI property table @0x0000000040280000
+Oct 02 21:20:39 ubuntu kernel: GICv3: CPU0: using allocated LPI pending table @0x0000000040290000
+Oct 02 21:20:39 ubuntu kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Oct 02 21:20:39 ubuntu kernel: arch_timer: cp15 timer(s) running at 24.00MHz (virt).
+Oct 02 21:20:39 ubuntu kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+Oct 02 21:20:39 ubuntu kernel: sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Oct 02 21:20:39 ubuntu kernel: Console: colour dummy device 80x25
+Oct 02 21:20:39 ubuntu kernel: printk: legacy console [tty1] enabled
+Oct 02 21:20:39 ubuntu kernel: ACPI: Core revision 20230628
+Oct 02 21:20:39 ubuntu kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+Oct 02 21:20:39 ubuntu kernel: pid_max: default: 32768 minimum: 301
+Oct 02 21:20:39 ubuntu kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+Oct 02 21:20:39 ubuntu kernel: landlock: Up and running.
+Oct 02 21:20:39 ubuntu kernel: Yama: becoming mindful.
+Oct 02 21:20:39 ubuntu kernel: AppArmor: AppArmor initialized
+Oct 02 21:20:39 ubuntu kernel: Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: rcu: Hierarchical SRCU implementation.
+Oct 02 21:20:39 ubuntu kernel: rcu:         Max phase no-delay instances is 400.
+Oct 02 21:20:39 ubuntu kernel: Platform MSI: ITS@0x8080000 domain created
+Oct 02 21:20:39 ubuntu kernel: PCI/MSI: ITS@0x8080000 domain created
+Oct 02 21:20:39 ubuntu kernel: fsl-mc MSI: ITS@0x8080000 domain created
+Oct 02 21:20:39 ubuntu kernel: Remapping and enabling EFI services.
+Oct 02 21:20:39 ubuntu kernel: smp: Bringing up secondary CPUs ...
+Oct 02 21:20:39 ubuntu kernel: Detected PIPT I-cache on CPU1
+Oct 02 21:20:39 ubuntu kernel: GICv3: CPU1: found redistributor 1 region 0:0x00000000080c0000
+Oct 02 21:20:39 ubuntu kernel: GICv3: CPU1: using allocated LPI pending table @0x00000000402a0000
+Oct 02 21:20:39 ubuntu kernel: CPU1: Booted secondary processor 0x0000000001 [0x610f0000]
+Oct 02 21:20:39 ubuntu kernel: smp: Brought up 1 node, 2 CPUs
+Oct 02 21:20:39 ubuntu kernel: SMP: Total of 2 processors activated.
+Oct 02 21:20:39 ubuntu kernel: CPU: All CPU(s) started at EL1
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: ARMv8.4 Translation Table Level
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Common not Private translations
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: CRC32 instructions
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Data cache clean to Point of Deep Persistence
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Data cache clean to Point of Persistence
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Data independent timing control (DIT)
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: E0PD
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Generic authentication (IMP DEF algorithm)
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: LSE atomic instructions
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Privileged Access Never
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: RAS Extension Support
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: Speculation barrier (SB)
+Oct 02 21:20:39 ubuntu kernel: CPU features: detected: TLB range maintenance instructions
+Oct 02 21:20:39 ubuntu kernel: alternatives: applying system-wide alternatives
+Oct 02 21:20:39 ubuntu kernel: devtmpfs: initialized
+Oct 02 21:20:39 ubuntu kernel: setend instruction emulation is not supported on this system
+Oct 02 21:20:39 ubuntu kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Oct 02 21:20:39 ubuntu kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: pinctrl core: initialized pinctrl subsystem
+Oct 02 21:20:39 ubuntu kernel: SMBIOS 3.0.0 present.
+Oct 02 21:20:39 ubuntu kernel: DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202302-for-qemu 03/01/2023
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 02 21:20:39 ubuntu kernel: DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+Oct 02 21:20:39 ubuntu kernel: DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 02 21:20:39 ubuntu kernel: DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 02 21:20:39 ubuntu kernel: audit: initializing netlink subsys (disabled)
+Oct 02 21:20:39 ubuntu kernel: audit: type=2000 audit(0.011:1): state=initialized audit_enabled=0 res=1
+Oct 02 21:20:39 ubuntu kernel: thermal_sys: Registered thermal governor 'fair_share'
+Oct 02 21:20:39 ubuntu kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Oct 02 21:20:39 ubuntu kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 02 21:20:39 ubuntu kernel: thermal_sys: Registered thermal governor 'user_space'
+Oct 02 21:20:39 ubuntu kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 02 21:20:39 ubuntu kernel: cpuidle: using governor ladder
+Oct 02 21:20:39 ubuntu kernel: cpuidle: using governor menu
+Oct 02 21:20:39 ubuntu kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Oct 02 21:20:39 ubuntu kernel: ASID allocator initialised with 256 entries
+Oct 02 21:20:39 ubuntu kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 02 21:20:39 ubuntu kernel: Serial: AMBA PL011 UART driver
+Oct 02 21:20:39 ubuntu kernel: Modules: 18016 pages in range for non-PLT usage
+Oct 02 21:20:39 ubuntu kernel: Modules: 509536 pages in range for PLT usage
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+Oct 02 21:20:39 ubuntu kernel: HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+Oct 02 21:20:39 ubuntu kernel: fbcon: Taking over console
+Oct 02 21:20:39 ubuntu kernel: ACPI: Added _OSI(Module Device)
+Oct 02 21:20:39 ubuntu kernel: ACPI: Added _OSI(Processor Device)
+Oct 02 21:20:39 ubuntu kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 02 21:20:39 ubuntu kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+Oct 02 21:20:39 ubuntu kernel: ACPI: Interpreter enabled
+Oct 02 21:20:39 ubuntu kernel: ACPI: Using GIC for interrupt routing
+Oct 02 21:20:39 ubuntu kernel: ACPI: MCFG table detected, 1 entries
+Oct 02 21:20:39 ubuntu kernel: ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+Oct 02 21:20:39 ubuntu kernel: printk: legacy console [ttyAMA0] enabled
+Oct 02 21:20:39 ubuntu kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-0f])
+Oct 02 21:20:39 ubuntu kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct 02 21:20:39 ubuntu kernel: acpi PNP0A08:00: _OSC: platform does not support [LTR DPC]
+Oct 02 21:20:39 ubuntu kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability]
+Oct 02 21:20:39 ubuntu kernel: acpi PNP0A08:00: ECAM area [mem 0x3f000000-0x3fffffff] reserved by PNP0C02:00
+Oct 02 21:20:39 ubuntu kernel: acpi PNP0A08:00: ECAM at [mem 0x3f000000-0x3fffffff] for [bus 00-0f]
+Oct 02 21:20:39 ubuntu kernel: ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+Oct 02 21:20:39 ubuntu kernel: PCI host bridge to bus 0000:00
+Oct 02 21:20:39 ubuntu kernel: pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+Oct 02 21:20:39 ubuntu kernel: pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+Oct 02 21:20:39 ubuntu kernel: pci_bus 0000:00: root bus resource [bus 00-0f]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: BAR 0 [io  0x00c0-0x00df]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: BAR 4 [mem 0x10048000-0x1004bfff 64bit pref]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: [1af4:1004] type 00 class 0x010000 conventional PCI endpoint
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: BAR 0 [io  0x0080-0x00bf]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: BAR 1 [mem 0x1004d000-0x1004dfff]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: BAR 4 [mem 0x10044000-0x10047fff 64bit pref]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: BAR 0 [io  0x0000-0x007f]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: BAR 1 [mem 0x1004c000-0x1004cfff]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: BAR 4 [mem 0x10040000-0x10043fff 64bit pref]
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: BAR 4 [mem 0x10040000-0x10043fff 64bit pref]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: BAR 4 [mem 0x10044000-0x10047fff 64bit pref]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: BAR 4 [mem 0x10048000-0x1004bfff 64bit pref]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: BAR 1 [mem 0x1004c000-0x1004cfff]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: BAR 1 [mem 0x1004d000-0x1004dfff]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:03.0: BAR 0 [io  0x1000-0x107f]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:02.0: BAR 0 [io  0x1080-0x10bf]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci 0000:00:01.0: BAR 0 [io  0x10c0-0x10df]: assigned
+Oct 02 21:20:39 ubuntu kernel: pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+Oct 02 21:20:39 ubuntu kernel: pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+Oct 02 21:20:39 ubuntu kernel: ACPI: PCI: Interrupt link GSI0 configured for IRQ 35
+Oct 02 21:20:39 ubuntu kernel: ACPI: PCI: Interrupt link GSI1 configured for IRQ 36
+Oct 02 21:20:39 ubuntu kernel: ACPI: PCI: Interrupt link GSI2 configured for IRQ 37
+Oct 02 21:20:39 ubuntu kernel: ACPI: PCI: Interrupt link GSI3 configured for IRQ 38
+Oct 02 21:20:39 ubuntu kernel: iommu: Default domain type: Translated
+Oct 02 21:20:39 ubuntu kernel: iommu: DMA domain TLB invalidation policy: strict mode
+Oct 02 21:20:39 ubuntu kernel: SCSI subsystem initialized
+Oct 02 21:20:39 ubuntu kernel: libata version 3.00 loaded.
+Oct 02 21:20:39 ubuntu kernel: ACPI: bus type USB registered
+Oct 02 21:20:39 ubuntu kernel: usbcore: registered new interface driver usbfs
+Oct 02 21:20:39 ubuntu kernel: usbcore: registered new interface driver hub
+Oct 02 21:20:39 ubuntu kernel: usbcore: registered new device driver usb
+Oct 02 21:20:39 ubuntu kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 02 21:20:39 ubuntu kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 02 21:20:39 ubuntu kernel: PTP clock support registered
+Oct 02 21:20:39 ubuntu kernel: EDAC MC: Ver: 3.0.0
+Oct 02 21:20:39 ubuntu kernel: scmi_core: SCMI protocol bus registered
+Oct 02 21:20:39 ubuntu kernel: efivars: Registered efivars operations
+Oct 02 21:20:39 ubuntu kernel: NetLabel: Initializing
+Oct 02 21:20:39 ubuntu kernel: NetLabel:  domain hash size = 128
+Oct 02 21:20:39 ubuntu kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 02 21:20:39 ubuntu kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 02 21:20:39 ubuntu kernel: mctp: management component transport protocol core
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_MCTP protocol family
+Oct 02 21:20:39 ubuntu kernel: vgaarb: loaded
+Oct 02 21:20:39 ubuntu kernel: clocksource: Switched to clocksource arch_sys_counter
+Oct 02 21:20:39 ubuntu kernel: VFS: Disk quotas dquot_6.6.0
+Oct 02 21:20:39 ubuntu kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 02 21:20:39 ubuntu kernel: AppArmor: AppArmor Filesystem Enabled
+Oct 02 21:20:39 ubuntu kernel: pnp: PnP ACPI init
+Oct 02 21:20:39 ubuntu kernel: system 00:00: [mem 0x3f000000-0x3fffffff window] could not be reserved
+Oct 02 21:20:39 ubuntu kernel: pnp: PnP ACPI: found 1 devices
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_INET protocol family
+Oct 02 21:20:39 ubuntu kernel: IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: TCP: Hash tables configured (established 16384 bind 16384)
+Oct 02 21:20:39 ubuntu kernel: MPTCP token hash table entries: 2048 (order: 4, 49152 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_XDP protocol family
+Oct 02 21:20:39 ubuntu kernel: PCI: CLS 0 bytes, default 64
+Oct 02 21:20:39 ubuntu kernel: Trying to unpack rootfs image as initramfs...
+Oct 02 21:20:39 ubuntu kernel: kvm [1]: HYP mode not available
+Oct 02 21:20:39 ubuntu kernel: Initialise system trusted keyrings
+Oct 02 21:20:39 ubuntu kernel: Key type blacklist registered
+Oct 02 21:20:39 ubuntu kernel: workingset: timestamp_bits=40 max_order=19 bucket_order=0
+Oct 02 21:20:39 ubuntu kernel: zbud: loaded
+Oct 02 21:20:39 ubuntu kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct 02 21:20:39 ubuntu kernel: fuse: init (API version 7.39)
+Oct 02 21:20:39 ubuntu kernel: integrity: Platform Keyring initialized
+Oct 02 21:20:39 ubuntu kernel: integrity: Machine keyring initialized
+Oct 02 21:20:39 ubuntu kernel: Key type asymmetric registered
+Oct 02 21:20:39 ubuntu kernel: Asymmetric key parser 'x509' registered
+Oct 02 21:20:39 ubuntu kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Oct 02 21:20:39 ubuntu kernel: io scheduler mq-deadline registered
+Oct 02 21:20:39 ubuntu kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct 02 21:20:39 ubuntu kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+Oct 02 21:20:39 ubuntu kernel: ACPI: button: Power Button [PWRB]
+Oct 02 21:20:39 ubuntu kernel: ACPI: \_SB_.PCI0.GSI1: Enabled at IRQ 36
+Oct 02 21:20:39 ubuntu kernel: virtio-pci 0000:00:01.0: enabling device (0005 -> 0007)
+Oct 02 21:20:39 ubuntu kernel: ACPI: \_SB_.PCI0.GSI2: Enabled at IRQ 37
+Oct 02 21:20:39 ubuntu kernel: virtio-pci 0000:00:02.0: enabling device (0005 -> 0007)
+Oct 02 21:20:39 ubuntu kernel: ACPI: \_SB_.PCI0.GSI3: Enabled at IRQ 38
+Oct 02 21:20:39 ubuntu kernel: virtio-pci 0000:00:03.0: enabling device (0005 -> 0007)
+Oct 02 21:20:39 ubuntu kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct 02 21:20:39 ubuntu kernel: msm_serial: driver initialized
+Oct 02 21:20:39 ubuntu kernel: SuperH (H)SCI(F) driver initialized
+Oct 02 21:20:39 ubuntu kernel: loop: module loaded
+Oct 02 21:20:39 ubuntu kernel: virtio_blk virtio2: 2/0/0 default/read/poll queues
+Oct 02 21:20:39 ubuntu kernel: virtio_blk virtio2: [vda] 108 512-byte logical blocks (55.3 kB/54.0 KiB)
+Oct 02 21:20:39 ubuntu kernel: virtio_scsi virtio1: 2/0/0 default/read/poll queues
+Oct 02 21:20:39 ubuntu kernel: scsi host0: Virtio SCSI HBA
+Oct 02 21:20:39 ubuntu kernel: ACPI: bus type drm_connector registered
+Oct 02 21:20:39 ubuntu kernel: tun: Universal TUN/TAP device driver, 1.6
+Oct 02 21:20:39 ubuntu kernel: PPP generic driver version 2.4.2
+Oct 02 21:20:39 ubuntu kernel: mousedev: PS/2 mouse device common for all mice
+Oct 02 21:20:39 ubuntu kernel: scsi 0:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+Oct 02 21:20:39 ubuntu kernel: rtc-efi rtc-efi.0: registered as rtc0
+Oct 02 21:20:39 ubuntu kernel: rtc-efi rtc-efi.0: setting system clock to 2026-10-02T20:20:37 UTC (1790972437)
+Oct 02 21:20:39 ubuntu kernel: i2c_dev: i2c /dev entries driver
+Oct 02 21:20:39 ubuntu kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct 02 21:20:39 ubuntu kernel: device-mapper: uevent: version 1.0.3
+Oct 02 21:20:39 ubuntu kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+Oct 02 21:20:39 ubuntu kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 02 21:20:39 ubuntu kernel: drop_monitor: Initializing network drop monitor service
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_INET6 protocol family
+Oct 02 21:20:39 ubuntu kernel: Freeing initrd memory: 28596K
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: Power-on or device reset occurred
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: [sda] Write Protect is off
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: [sda] Mode Sense: 63 00 00 08
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 02 21:20:39 ubuntu kernel: Segment Routing with IPv6
+Oct 02 21:20:39 ubuntu kernel: In-situ OAM (IOAM) with IPv6
+Oct 02 21:20:39 ubuntu kernel: NET: Registered PF_PACKET protocol family
+Oct 02 21:20:39 ubuntu kernel: Key type dns_resolver registered
+Oct 02 21:20:39 ubuntu kernel: GPT:Primary header thinks Alt. header is not at the end of the disk.
+Oct 02 21:20:39 ubuntu kernel: GPT:7340031 != 20971519
+Oct 02 21:20:39 ubuntu kernel: GPT:Alternate GPT header not at the end of the disk.
+Oct 02 21:20:39 ubuntu kernel: GPT:7340031 != 20971519
+Oct 02 21:20:39 ubuntu kernel: GPT: Use GNU Parted to correct GPT errors.
+Oct 02 21:20:39 ubuntu kernel:  sda: sda1 sda15 sda16
+Oct 02 21:20:39 ubuntu kernel: registered taskstats version 1
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Oct 02 21:20:39 ubuntu kernel: Loading compiled-in X.509 certificates
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Build time autogenerated kernel key: d88ce5637755acf9eafda3d7bf1de796fc42b72f'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Oct 02 21:20:39 ubuntu kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Oct 02 21:20:39 ubuntu kernel: Key type .fscrypt registered
+Oct 02 21:20:39 ubuntu kernel: Key type fscrypt-provisioning registered
+Oct 02 21:20:39 ubuntu kernel: Key type encrypted registered
+Oct 02 21:20:39 ubuntu kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Oct 02 21:20:39 ubuntu kernel: ima: secureboot mode disabled
+Oct 02 21:20:39 ubuntu kernel: ima: No TPM chip found, activating TPM-bypass!
+Oct 02 21:20:39 ubuntu kernel: Loading compiled-in module X.509 certificates
+Oct 02 21:20:39 ubuntu kernel: Loaded X.509 cert 'Build time autogenerated kernel key: d88ce5637755acf9eafda3d7bf1de796fc42b72f'
+Oct 02 21:20:39 ubuntu kernel: ima: Allocated hash algorithm: sha256
+Oct 02 21:20:39 ubuntu kernel: ima: No architecture policies found
+Oct 02 21:20:39 ubuntu kernel: evm: Initialising EVM extended attributes:
+Oct 02 21:20:39 ubuntu kernel: evm: security.selinux
+Oct 02 21:20:39 ubuntu kernel: evm: security.SMACK64
+Oct 02 21:20:39 ubuntu kernel: evm: security.SMACK64EXEC
+Oct 02 21:20:39 ubuntu kernel: evm: security.SMACK64TRANSMUTE
+Oct 02 21:20:39 ubuntu kernel: evm: security.SMACK64MMAP
+Oct 02 21:20:39 ubuntu kernel: evm: security.apparmor
+Oct 02 21:20:39 ubuntu kernel: evm: security.ima
+Oct 02 21:20:39 ubuntu kernel: evm: security.capability
+Oct 02 21:20:39 ubuntu kernel: evm: HMAC attrs: 0x1
+Oct 02 21:20:39 ubuntu kernel: clk: Disabling unused clocks
+Oct 02 21:20:39 ubuntu kernel: Freeing unused kernel memory: 12288K
+Oct 02 21:20:39 ubuntu kernel: Checked W+X mappings: passed, no W+X pages found
+Oct 02 21:20:39 ubuntu kernel: Run /init as init process
+Oct 02 21:20:39 ubuntu kernel:   with arguments:
+Oct 02 21:20:39 ubuntu kernel:     /init
+Oct 02 21:20:39 ubuntu kernel:   with environment:
+Oct 02 21:20:39 ubuntu kernel:     HOME=/
+Oct 02 21:20:39 ubuntu kernel:     TERM=linux
+Oct 02 21:20:39 ubuntu kernel: virtio_net virtio0 enp0s1: renamed from eth0
+Oct 02 21:20:39 ubuntu kernel: raid6: neonx8   gen() 33783 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: neonx4   gen() 35217 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: neonx2   gen() 35063 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: neonx1   gen() 32879 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: int64x8  gen() 14228 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: int64x4  gen() 12565 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: int64x2  gen() 11380 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: int64x1  gen()  9982 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: using algorithm neonx4 gen() 35217 MB/s
+Oct 02 21:20:39 ubuntu kernel: raid6: .... xor() 28481 MB/s, rmw enabled
+Oct 02 21:20:39 ubuntu kernel: raid6: using neon recovery algorithm
+Oct 02 21:20:39 ubuntu kernel: xor: measuring software checksum speed
+Oct 02 21:20:39 ubuntu kernel:    8regs           : 21127 MB/sec
+Oct 02 21:20:39 ubuntu kernel:    32regs          : 42220 MB/sec
+Oct 02 21:20:39 ubuntu kernel:    arm64_neon      : 49710 MB/sec
+Oct 02 21:20:39 ubuntu kernel: xor: using function: arm64_neon (49710 MB/sec)
+Oct 02 21:20:39 ubuntu kernel: async_tx: api initialized (async)
+Oct 02 21:20:39 ubuntu kernel: Btrfs loaded, zoned=yes, fsverity=yes
+Oct 02 21:20:39 ubuntu kernel: EXT4-fs (sda1): mounted filesystem 86f7cf19-9959-4dba-91b1-0052c9d45c21 ro with ordered data mode. Quota mode: none.
+Oct 02 21:20:39 ubuntu systemd[1]: Inserted module 'autofs4'
+Oct 02 21:20:39 ubuntu systemd[1]: systemd 255.4-1ubuntu8.17 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct 02 21:20:39 ubuntu systemd[1]: Detected virtualization qemu.
+Oct 02 21:20:39 ubuntu systemd[1]: Detected architecture arm64.
+Oct 02 21:20:39 ubuntu systemd[1]: Hostname set to <ubuntu>.
+Oct 02 21:20:39 ubuntu systemd[1]: Initializing machine ID from VM UUID.
+Oct 02 21:20:39 ubuntu systemd[1]: Installed transient /etc/machine-id file.
+Oct 02 21:20:39 ubuntu systemd[1]: Queued start job for default target graphical.target.
+Oct 02 21:20:39 ubuntu systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Oct 02 21:20:39 ubuntu systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Oct 02 21:20:39 ubuntu systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Oct 02 21:20:39 ubuntu systemd[1]: Created slice user.slice - User and Session Slice.
+Oct 02 21:20:39 ubuntu systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Oct 02 21:20:39 ubuntu systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Oct 02 21:20:39 ubuntu systemd[1]: Expecting device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT...
+Oct 02 21:20:39 ubuntu systemd[1]: Expecting device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI...
+Oct 02 21:20:39 ubuntu systemd[1]: Expecting device dev-ttyAMA0.device - /dev/ttyAMA0...
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target slices.target - Slice Units.
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target swap.target - Swaps.
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on multipathd.socket - multipathd control socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on syslog.socket - Syslog Socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Oct 02 21:20:39 ubuntu systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Oct 02 21:20:39 ubuntu systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Oct 02 21:20:39 ubuntu systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Oct 02 21:20:39 ubuntu systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-journald.service - Journal Service...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Oct 02 21:20:39 ubuntu systemd-journald[281]: Collecting audit messages is disabled.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Oct 02 21:20:39 ubuntu systemd-journald[281]: Journal started
+Oct 02 21:20:39 ubuntu systemd-journald[281]: Runtime Journal (/run/log/journal/3b01796509243d68adacc07d52549a67) is 2.4M, max 19.5M, 17.1M free.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+Oct 02 21:20:39 ubuntu systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 02 21:20:39 ubuntu kernel: pstore: Using crash dump compression: deflate
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+Oct 02 21:20:39 ubuntu kernel: pstore: Registered efi_pstore as persistent store backend
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Oct 02 21:20:39 ubuntu systemd-modules-load[297]: Module 'i2c_dev' is built in
+Oct 02 21:20:39 ubuntu systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Oct 02 21:20:39 ubuntu systemd[1]: Started systemd-journald.service - Journal Service.
+Oct 02 21:20:39 ubuntu systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Oct 02 21:20:39 ubuntu systemd-fsck[300]: cloudimg-rootfs: clean, 87690/327680 files, 480266/655099 blocks
+Oct 02 21:20:39 ubuntu systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Oct 02 21:20:39 ubuntu systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+Oct 02 21:20:39 ubuntu systemd-modules-load[297]: Inserted module 'dm_multipath'
+Oct 02 21:20:39 ubuntu systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Oct 02 21:20:39 ubuntu systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Oct 02 21:20:39 ubuntu systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished keyboard-setup.service - Set the console keyboard layout.
+Oct 02 21:20:39 ubuntu systemd[1]: modprobe@drm.service: Deactivated successfully.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+Oct 02 21:20:39 ubuntu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+Oct 02 21:20:39 ubuntu systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+Oct 02 21:20:39 ubuntu systemd[1]: modprobe@loop.service: Deactivated successfully.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-fsck-root.service - File System Check on Root Device.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Oct 02 21:20:39 ubuntu systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+Oct 02 21:20:39 ubuntu systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+Oct 02 21:20:39 ubuntu systemd[1]: Started systemd-fsckd.service - File System Check Daemon to report status.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+Oct 02 21:20:39 ubuntu systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+Oct 02 21:20:39 ubuntu systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+Oct 02 21:20:39 ubuntu kernel: EXT4-fs (sda1): re-mounted 86f7cf19-9959-4dba-91b1-0052c9d45c21 r/w.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting multipathd.service - Device-Mapper Multipath Device Controller...
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because no trigger condition checks were met.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-journal-flush.service - Flush Journal to Persistent Storage...
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+Oct 02 21:20:39 ubuntu systemd-journald[281]: Time spent on flushing to /var/log/journal/3b01796509243d68adacc07d52549a67 is 4.585ms for 487 entries.
+Oct 02 21:20:39 ubuntu systemd-journald[281]: System Journal (/var/log/journal/3b01796509243d68adacc07d52549a67) is 8.0M, max 240.8M, 232.8M free.
+Oct 02 21:20:39 ubuntu systemd-journald[281]: Received client request to flush runtime journal.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-tpm2-setup.service - TPM2 SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-sysusers.service - Create System Users...
+Oct 02 21:20:39 ubuntu systemd-random-seed[334]: Kernel entropy pool is not initialized yet, waiting until it is.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-journal-flush.service - Flush Journal to Persistent Storage.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-sysusers.service - Create System Users.
+Oct 02 21:20:39 ubuntu multipathd[336]: multipathd v0.9.4: start up
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+Oct 02 21:20:39 ubuntu multipathd[336]: reconfigure: setting up paths and maps
+Oct 02 21:20:39 ubuntu systemd[1]: Started multipathd.service - Device-Mapper Multipath Device Controller.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+Oct 02 21:20:39 ubuntu systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+Oct 02 21:20:39 ubuntu systemd-udevd[355]: Using default interface naming scheme 'v255'.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-udev-trigger.service - Coldplug All udev Devices.
+Oct 02 21:20:39 ubuntu systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.
+Oct 02 21:20:39 ubuntu systemd[1]: plymouth-start.service - Show Plymouth Boot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Oct 02 21:20:39 ubuntu systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+Oct 02 21:20:39 ubuntu systemd[1]: systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch was skipped because of an unmet condition check (ConditionPathExists=/run/plymouth/pid).
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+Oct 02 21:20:39 ubuntu systemd[1]: Found device dev-ttyAMA0.device - /dev/ttyAMA0.
+Oct 02 21:20:39 ubuntu kernel: random: crng init done
+Oct 02 21:20:39 ubuntu systemd[1]: Finished systemd-random-seed.service - Load/Save OS Random Seed.
+Oct 02 21:20:39 ubuntu systemd[1]: Finished lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Oct 02 21:20:39 ubuntu systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+Oct 02 21:20:40 ubuntu systemd[1]: Found device dev-disk-by\x2dlabel-UEFI.device - QEMU_HARDDISK UEFI.
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI...
+Oct 02 21:20:40 ubuntu systemd-fsck[414]: fsck.fat 4.2 (2021-01-31)
+Oct 02 21:20:40 ubuntu systemd-fsck[414]: /dev/sda15: 12 files, 12965/199582 clusters
+Oct 02 21:20:40 ubuntu systemd[1]: Found device dev-disk-by\x2dlabel-BOOT.device - QEMU_HARDDISK BOOT.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI.
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT...
+Oct 02 21:20:40 ubuntu systemd-fsck[419]: BOOT: clean, 260/59136 files, 23797/236288 blocks
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT.
+Oct 02 21:20:40 ubuntu systemd[1]: Mounting boot.mount - /boot...
+Oct 02 21:20:40 ubuntu kernel: EXT4-fs (sda16): mounted filesystem 5b886046-3262-4eca-a390-4cd88779a3c7 r/w with ordered data mode. Quota mode: none.
+Oct 02 21:20:40 ubuntu systemd[1]: Mounted boot.mount - /boot.
+Oct 02 21:20:40 ubuntu systemd[1]: Mounting boot-efi.mount - /boot/efi...
+Oct 02 21:20:40 ubuntu systemd[1]: Mounted boot-efi.mount - /boot/efi.
+Oct 02 21:20:40 ubuntu systemd[1]: Reached target local-fs.target - Local File Systems.
+Oct 02 21:20:40 ubuntu systemd[1]: Listening on systemd-sysext.socket - System Extension Image Management (Varlink).
+Oct 02 21:20:40 ubuntu systemd[1]: Starting apparmor.service - Load AppArmor profiles...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting console-setup.service - Set console font and keymap...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting finalrd.service - Create final runtime dir for shutdown pivot root...
+Oct 02 21:20:40 ubuntu apparmor.systemd[428]: Restarting AppArmor
+Oct 02 21:20:40 ubuntu apparmor.systemd[428]: /lib/apparmor/apparmor.systemd: 148: [: Illegal number: yes
+Oct 02 21:20:40 ubuntu apparmor.systemd[428]: Reloading AppArmor profiles
+Oct 02 21:20:40 ubuntu systemd[1]: Starting ldconfig.service - Rebuild Dynamic Linker Cache...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-binfmt.service - Set Up Additional Binary Formats...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-tmpfiles-setup.service - Create Volatile Files and Directories...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting ufw.service - Uncomplicated firewall...
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.172:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=448 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.172:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=447 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.173:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=455 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu systemd[1]: Finished console-setup.service - Set console font and keymap.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished finalrd.service - Create final runtime dir for shutdown pivot root.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data.
+Oct 02 21:20:40 ubuntu systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 446 (systemd-binfmt)
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.179:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=456 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.180:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=457 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu systemd[1]: Finished ufw.service - Uncomplicated firewall.
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.183:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=460 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu systemd[1]: Listening on systemd-rfkill.socket - Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.187:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=465 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.187:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=464 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu kernel: audit: type=1400 audit(1790972440.190:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-run" pid=470 comm="apparmor_parser"
+Oct 02 21:20:40 ubuntu systemd[1]: Mounting proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System...
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-tmpfiles-setup.service - Create Volatile Files and Directories.
+Oct 02 21:20:40 ubuntu systemd[1]: Mounted proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System.
+Oct 02 21:20:40 ubuntu systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Oct 02 21:20:40 ubuntu systemd[1]: first-boot-complete.target - First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-journal-catalog-update.service - Rebuild Journal Catalog...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-machine-id-commit.service - Commit a transient machine-id on disk...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-binfmt.service - Set Up Additional Binary Formats.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-journal-catalog-update.service - Rebuild Journal Catalog.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-machine-id-commit.service - Commit a transient machine-id on disk.
+Oct 02 21:20:40 ubuntu systemd[1]: Started systemd-timesyncd.service - Network Time Synchronization.
+Oct 02 21:20:40 ubuntu systemd[1]: Reached target time-set.target - System Time Set.
+Oct 02 21:20:40 ubuntu systemd-resolved[495]: Positive Trust Anchors:
+Oct 02 21:20:40 ubuntu systemd-resolved[495]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Oct 02 21:20:40 ubuntu systemd-resolved[495]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa corp home internal intranet lan local private test
+Oct 02 21:20:40 ubuntu systemd-resolved[495]: Using system hostname 'ubuntu'.
+Oct 02 21:20:40 ubuntu systemd[1]: Started systemd-resolved.service - Network Name Resolution.
+Oct 02 21:20:40 ubuntu systemd[1]: Reached target nss-lookup.target - Host and Network Name Lookups.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished ldconfig.service - Rebuild Dynamic Linker Cache.
+Oct 02 21:20:40 ubuntu systemd[1]: Starting systemd-update-done.service - Update is Completed...
+Oct 02 21:20:40 ubuntu systemd[1]: Finished systemd-update-done.service - Update is Completed.
+Oct 02 21:20:40 ubuntu systemd[1]: etc-machine\x2did.mount: Deactivated successfully.
+Oct 02 21:20:40 ubuntu systemd[1]: Finished apparmor.service - Load AppArmor profiles.
+Oct 02 21:20:40 ubuntu systemd[1]: Starting snapd.apparmor.service - Load AppArmor profiles managed internally by snapd...
+Oct 02 21:20:40 ubuntu systemd[1]: vgauth.service - Authentication service for virtual machines hosted on VMware was skipped because of an unmet condition check (ConditionVirtualization=vmware).
+Oct 02 21:20:40 ubuntu systemd[1]: open-vm-tools.service - Service for virtual machines hosted on VMware was skipped because of an unmet condition check (ConditionVirtualization=vmware).
+Oct 02 21:20:40 ubuntu systemd[1]: Starting cloud-init-local.service - Cloud-init: Local Stage (pre-network)...
+Oct 02 21:20:40 ubuntu snapd-apparmor[582]: main.go:143: No profiles to load
+Oct 02 21:20:40 ubuntu systemd[1]: Finished snapd.apparmor.service - Load AppArmor profiles managed internally by snapd.
+Oct 02 21:20:41 ubuntu cloud-init[593]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'init-local' at Fri, 02 Oct 2026 20:20:41 +0000. Up 3.65 seconds.
+Oct 02 21:20:41 ubuntu kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+Oct 02 21:20:41 ubuntu kernel: ISOFS: changing to secondary root
+Oct 02 21:20:41 ubuntu systemd[1]: run-cloud\x2dinit-tmp-tmpsss674bq.mount: Deactivated successfully.
+Oct 02 21:20:41 grc102-week4 systemd-resolved[495]: System hostname changed to 'grc102-week4'.
+Oct 02 21:20:41 grc102-week4 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 02 21:20:41 grc102-week4 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 02 21:20:41 grc102-week4 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 02 21:20:41 grc102-week4 systemd[1]: Reloading requested from client PID 612 ('systemctl') (unit cloud-init-local.service)...
+Oct 02 21:20:41 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:20:41 grc102-week4 systemd[1]: Reloading finished in 105 ms.
+Oct 02 21:20:41 grc102-week4 systemd[1]: Finished cloud-init-local.service - Cloud-init: Local Stage (pre-network).
+Oct 02 21:20:41 grc102-week4 systemd[1]: Reached target network-pre.target - Preparation for Network.
+Oct 02 21:20:41 grc102-week4 systemd[1]: Starting systemd-networkd.service - Network Configuration...
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: lo: Link UP
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: lo: Gained carrier
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: Enumeration completed
+Oct 02 21:20:41 grc102-week4 systemd[1]: Started systemd-networkd.service - Network Configuration.
+Oct 02 21:20:41 grc102-week4 systemd[1]: Reached target network.target - Network.
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: enp0s1: Configuring with /run/systemd/network/10-netplan-default.network.
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: enp0s1: Link UP
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: enp0s1: Gained carrier
+Oct 02 21:20:41 grc102-week4 systemd[1]: Starting systemd-networkd-wait-online.service - Wait for Network to be Configured...
+Oct 02 21:20:41 grc102-week4 systemd-networkd[648]: enp0s1: DHCPv4 address 192.168.252.2/24, gateway 192.168.252.1 acquired from 192.168.252.1
+Oct 02 21:20:41 grc102-week4 systemd-timesyncd[501]: Network configuration changed, trying to establish connection.
+Oct 02 21:20:43 grc102-week4 systemd-networkd[648]: enp0s1: Gained IPv6LL
+Oct 02 21:20:43 grc102-week4 systemd-timesyncd[501]: Network configuration changed, trying to establish connection.
+Oct 02 21:20:43 grc102-week4 systemd[1]: Finished systemd-networkd-wait-online.service - Wait for Network to be Configured.
+Oct 02 21:20:43 grc102-week4 systemd[1]: Starting cloud-init.service - Cloud-init: Network Stage...
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'init' at Fri, 02 Oct 2026 20:20:43 +0000. Up 6.14 seconds.
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: | enp0s1 | True |       192.168.252.2        | 255.255.255.0 | global | 52:54:00:a8:90:a5 |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: | enp0s1 | True | fe80::5054:ff:fea8:90a5/64 |       .       |  link  | 52:54:00:a8:90:a5 |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: ++++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++++
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +-------+---------------+---------------+-----------------+-----------+-------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: | Route |  Destination  |    Gateway    |     Genmask     | Interface | Flags |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +-------+---------------+---------------+-----------------+-----------+-------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   0   |    0.0.0.0    | 192.168.252.1 |     0.0.0.0     |   enp0s1  |   UG  |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   1   | 192.168.252.0 |    0.0.0.0    |  255.255.255.0  |   enp0s1  |   U   |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   2   | 192.168.252.1 |    0.0.0.0    | 255.255.255.255 |   enp0s1  |   UH  |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +-------+---------------+---------------+-----------------+-----------+-------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   0   |  fe80::/64  |    ::   |   enp0s1  |   U   |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   2   |    local    |    ::   |   enp0s1  |   U   |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: |   3   |  multicast  |    ::   |   enp0s1  |   U   |
+Oct 02 21:20:43 grc102-week4 cloud-init[658]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 02 21:20:44 grc102-week4 kernel: EXT4-fs (sda1): resizing filesystem from 655099 to 2359035 blocks
+Oct 02 21:20:44 grc102-week4 kernel: EXT4-fs (sda1): resized filesystem to 2359035
+Oct 02 21:20:44 grc102-week4 useradd[737]: new group: name=ubuntu, GID=1000
+Oct 02 21:20:44 grc102-week4 useradd[737]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to group 'adm'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to group 'cdrom'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to group 'sudo'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to group 'dip'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to group 'lxd'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to shadow group 'adm'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to shadow group 'cdrom'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to shadow group 'sudo'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to shadow group 'dip'
+Oct 02 21:20:44 grc102-week4 useradd[737]: add 'ubuntu' to shadow group 'lxd'
+Oct 02 21:20:44 grc102-week4 passwd[745]: password for 'ubuntu' changed by 'root'
+Oct 02 21:20:44 grc102-week4 systemd-timesyncd[501]: Network configuration changed, trying to establish connection.
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Generating public/private rsa key pair.
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: The key fingerprint is:
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: SHA256:ekRVMYztgMyNabO8gl2+ifVgJaHHFVbm7OvaigVcZDw root@grc102-week4
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: The key's randomart image is:
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: +---[RSA 3072]----+
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |       o **B*.   |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |        X=E+o.   |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |       =.=.+o    |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |      .oB....    |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |     o +S+  .    |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |    . oo*.   .   |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |      .=.=. .    |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |      ..oo.o     |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |        . ooo    |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: +----[SHA256]-----+
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Generating public/private ecdsa key pair.
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: The key fingerprint is:
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: SHA256:GF5S16i2VZyRbRbs354I+ZsF5mknjMG9fKvm22kOPX4 root@grc102-week4
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: The key's randomart image is:
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: +---[ECDSA 256]---+
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |        . .+.*.. |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |       . .. * =  |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |      o .. . +   |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |     . =o o . .  |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |      o.So o.+ ..|
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |        .  oB = o|
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |           .oX.B.|
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |            .+XoE|
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |            o***.|
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: +----[SHA256]-----+
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Generating public/private ed25519 key pair.
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: The key fingerprint is:
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: SHA256:WzgUawN2CbxhesrzFePrhCjJBpKuYvtwySyn3w8mktU root@grc102-week4
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: The key's randomart image is:
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: +--[ED25519 256]--+
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |     .+.o.       |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |     .+o.o       |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |     o o=        |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: | .  o oooo       |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |+  o E .So.      |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |oo=.=. .o+       |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: | *=B.=..o.       |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |ooB.+ o..        |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: |+o+o ..o.        |
+Oct 02 21:20:45 grc102-week4 cloud-init[658]: +----[SHA256]-----+
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished cloud-init.service - Cloud-init: Network Stage.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target cloud-config.target - Cloud-config availability.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target network-online.target - Network is Online.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target sysinit.target - System Initialization.
+Oct 02 21:20:45 grc102-week4 systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
+Oct 02 21:20:45 grc102-week4 systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started apt-daily.timer - Daily apt download activities.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started apt-daily-upgrade.timer - Daily apt upgrade and clean activities.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started fwupd-refresh.timer - Refresh fwupd metadata regularly.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started logrotate.timer - Daily rotation of log files.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started man-db.timer - Daily man-db regeneration.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started motd-news.timer - Message of the Day.
+Oct 02 21:20:45 grc102-week4 systemd[1]: snapd.snap-repair.timer - Timer to automatically fetch and run repair assertions was skipped because no trigger condition checks were met.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started sysstat-collect.timer - Run system activity accounting tool every 10 minutes.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started sysstat-summary.timer - Generate summary of yesterday's process accounting.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.
+Oct 02 21:20:45 grc102-week4 systemd[1]: ua-timer.timer - Ubuntu Pro Timer for running repeated jobs was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started update-notifier-download.timer - Download data for packages that failed at package install time.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started update-notifier-motd.timer - Check to see whether there is a new version of Ubuntu available.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target paths.target - Path Units.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target timers.target - Timer Units.
+Oct 02 21:20:45 grc102-week4 systemd[1]: apport-forward.socket - Unix socket for apport crash forwarding was skipped because of an unmet condition check (ConditionVirtualization=container).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on cloud-init-hotplugd.socket - cloud-init hotplug hook socket.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on dbus.socket - D-Bus System Message Bus Socket.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on iscsid.socket - Open-iSCSI iscsid Socket.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting lxd-installer.socket - Helper to install lxd snap on demand...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting snapd.socket - Socket activation for snappy daemon...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on ssh.socket - OpenBSD Secure Shell server socket.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on uuidd.socket - UUID daemon activation socket.
+Oct 02 21:20:45 grc102-week4 systemd[1]: open-iscsi.service - Login to default iSCSI targets was skipped because no trigger condition checks were met.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target remote-fs-pre.target - Preparation for Remote File Systems.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target remote-fs.target - Remote File Systems.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished blk-availability.service - Availability of block devices.
+Oct 02 21:20:45 grc102-week4 systemd[1]: systemd-pcrphase-sysinit.service - TPM2 PCR Barrier (Initialization) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on lxd-installer.socket - Helper to install lxd snap on demand.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Listening on snapd.socket - Socket activation for snappy daemon.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target sockets.target - Socket Units.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target basic.target - Basic System.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting apport.service - automatic crash report generation...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting cloud-config.service - Cloud-init: Config Stage...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started cron.service - Regular background program processing daemon.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+Oct 02 21:20:45 grc102-week4 (cron)[762]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started dmesg.service - Save initial kernel messages after boot.
+Oct 02 21:20:45 grc102-week4 cron[762]: (CRON) INFO (pidfile fd = 3)
+Oct 02 21:20:45 grc102-week4 cron[762]: (CRON) INFO (Running @reboot jobs)
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots...
+Oct 02 21:20:45 grc102-week4 systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting grub-common.service - Record successful boot for GRUB...
+Oct 02 21:20:45 grc102-week4 systemd[1]: networkd-dispatcher.service - Dispatcher daemon for systemd-networkd was skipped because no trigger condition checks were met.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting polkit.service - Authorization Manager...
+Oct 02 21:20:45 grc102-week4 dbus-daemon[763]: [system] AppArmor D-Bus mediation is enabled
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting pollinate.service - Pollinate to seed the pseudo random number generator...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting rsyslog.service - System Logging Service...
+Oct 02 21:20:45 grc102-week4 systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f).
+Oct 02 21:20:45 grc102-week4 systemd[1]: snapd.core-fixup.service - Automatically repair incorrect owner/permissions on core devices was skipped because no trigger condition checks were met.
+Oct 02 21:20:45 grc102-week4 systemd[1]: snapd.recovery-chooser-trigger.service - Wait for the Ubuntu Core chooser trigger was skipped because of an unmet condition check (ConditionKernelCommandLine=snapd_recovery_mode).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target getty-pre.target - Preparation for Logins.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting snapd.seeded.service - Wait until snapd is fully seeded...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting snapd.service - Snap Daemon...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting sysstat.service - Resets System Activity Logs...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting systemd-logind.service - User Login Management...
+Oct 02 21:20:45 grc102-week4 systemd[1]: systemd-pcrphase.service - TPM2 PCR Barrier (User) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting systemd-user-sessions.service - Permit User Sessions...
+Oct 02 21:20:45 grc102-week4 systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Oct 02 21:20:45 grc102-week4 systemd[1]: ubuntu-advantage.service - Ubuntu Pro Background Auto Attach was skipped because no trigger condition checks were met.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting udisks2.service - Disk Manager...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started dbus.service - D-Bus System Message Bus.
+Oct 02 21:20:45 grc102-week4 systemd[1]: e2scrub_reap.service: Deactivated successfully.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots.
+Oct 02 21:20:45 grc102-week4 systemd-logind[778]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct 02 21:20:45 grc102-week4 systemd-logind[778]: New seat seat0.
+Oct 02 21:20:45 grc102-week4 udisksd[780]: udisks daemon version 2.10.1 starting
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started systemd-logind.service - User Login Management.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished sysstat.service - Resets System Activity Logs.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished systemd-user-sessions.service - Permit User Sessions.
+Oct 02 21:20:45 grc102-week4 dbus-daemon[763]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting plymouth-quit-wait.service - Hold until boot process finishes up...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting plymouth-quit.service - Terminate Plymouth Boot Screen...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 02 21:20:45 grc102-week4 kernel: kauditd_printk_skb: 108 callbacks suppressed
+Oct 02 21:20:45 grc102-week4 kernel: audit: type=1400 audit(1790972445.815:119): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=777 comm="apparmor_parser"
+Oct 02 21:20:45 grc102-week4 dbus-daemon[763]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.5' (uid=0 pid=780 comm="/usr/libexec/udisks2/udisksd" label="unconfined")
+Oct 02 21:20:45 grc102-week4 pollinate[825]: client sent challenge to [https://entropy.ubuntu.com/]
+Oct 02 21:20:45 grc102-week4 polkitd[768]: Started polkitd version 124
+Oct 02 21:20:45 grc102-week4 polkitd[768]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 02 21:20:45 grc102-week4 polkitd[768]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished plymouth-quit-wait.service - Hold until boot process finishes up.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished plymouth-quit.service - Terminate Plymouth Boot Screen.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started serial-getty@ttyAMA0.service - Serial Getty on ttyAMA0.
+Oct 02 21:20:45 grc102-week4 polkitd[768]: Finished loading, compiling and executing 6 rules
+Oct 02 21:20:45 grc102-week4 dbus-daemon[763]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Oct 02 21:20:45 grc102-week4 polkitd[768]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting setvtrgb.service - Set console scheme...
+Oct 02 21:20:45 grc102-week4 systemd[1]: grub-common.service: Deactivated successfully.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished grub-common.service - Record successful boot for GRUB.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished setvtrgb.service - Set console scheme.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started polkit.service - Authorization Manager.
+Oct 02 21:20:45 grc102-week4 systemd-timesyncd[501]: Network configuration changed, trying to establish connection.
+Oct 02 21:20:45 grc102-week4 rsyslogd[823]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2312.0]
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started rsyslog.service - System Logging Service.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+Oct 02 21:20:45 grc102-week4 rsyslogd[823]: rsyslogd's groupid changed to 102
+Oct 02 21:20:45 grc102-week4 rsyslogd[823]: rsyslogd's userid changed to 102
+Oct 02 21:20:45 grc102-week4 rsyslogd[823]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="823" x-info="https://www.rsyslog.com"] start
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting ModemManager.service - Modem Manager...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started getty@tty1.service - Getty on tty1.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Reached target getty.target - Login Prompts.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Starting grub-initrd-fallback.service - GRUB failed boot detection...
+Oct 02 21:20:45 grc102-week4 systemd[1]: Finished apport.service - automatic crash report generation.
+Oct 02 21:20:45 grc102-week4 systemd[1]: Started udisks2.service - Disk Manager.
+Oct 02 21:20:45 grc102-week4 udisksd[780]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Oct 02 21:20:46 grc102-week4 ModemManager[877]: <msg> ModemManager (version 1.23.4) starting in system bus...
+Oct 02 21:20:46 grc102-week4 systemd[1]: grub-initrd-fallback.service: Deactivated successfully.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Finished grub-initrd-fallback.service - GRUB failed boot detection.
+Oct 02 21:20:46 grc102-week4 snapd[773]: seclog.go:174: security logger enabled
+Oct 02 21:20:46 grc102-week4 cloud-init[905]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'modules:config' at Fri, 02 Oct 2026 20:20:46 +0000. Up 8.64 seconds.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Started ModemManager.service - Modem Manager.
+Oct 02 21:20:46 grc102-week4 snapd[773]: overlord.go:313: Acquiring state lock file
+Oct 02 21:20:46 grc102-week4 snapd[773]: overlord.go:318: Acquired state lock file
+Oct 02 21:20:46 grc102-week4 snapd[773]: daemon.go:277: started snapd/2.76.3+ubuntu24.04 (series 16; classic) ubuntu/24.04 (arm64) linux/6.8.0-142-generic.
+Oct 02 21:20:46 grc102-week4 kernel: loop0: detected capacity change from 0 to 8
+Oct 02 21:20:46 grc102-week4 systemd[1]: tmp-syscheck\x2dmountpoint\x2d3829826877.mount: Deactivated successfully.
+Oct 02 21:20:46 grc102-week4 snapd[773]: daemon.go:371: adjusting startup timeout by 30s (pessimistic estimate of 30s plus 5s per snap)
+Oct 02 21:20:46 grc102-week4 snapd[773]: backends.go:70: AppArmor status: apparmor is enabled and all features are available
+Oct 02 21:20:46 grc102-week4 snapd[773]: backend.go:145: reloading profiles for snap-confine
+Oct 02 21:20:46 grc102-week4 kernel: audit: type=1400 audit(1790972446.190:120): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=947 comm="apparmor_parser"
+Oct 02 21:20:46 grc102-week4 snapd[773]: helpers.go:190: error trying to compare the snap system key: system-key missing on disk
+Oct 02 21:20:46 grc102-week4 snapd[773]: standby.go:95: will consider standby after: 5s
+Oct 02 21:20:46 grc102-week4 systemd[1]: Started snapd.service - Snap Daemon.
+Oct 02 21:20:46 grc102-week4 snapd[773]: autorepair.go:177: WARNING: the system booted with an old initrd without unlocked status reporting
+Oct 02 21:20:46 grc102-week4 snapd[773]: certmgr.go:84: No CA certificate database found, generating it now
+Oct 02 21:20:46 grc102-week4 dbus-daemon[763]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.9' (uid=0 pid=773 comm="/usr/lib/snapd/snapd" label="unconfined")
+Oct 02 21:20:46 grc102-week4 systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+Oct 02 21:20:46 grc102-week4 systemd[1]: Finished cloud-config.service - Cloud-init: Config Stage.
+Oct 02 21:20:46 grc102-week4 dbus-daemon[763]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct 02 21:20:46 grc102-week4 systemd[1]: Started systemd-timedated.service - Time & Date Service.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Finished snapd.seeded.service - Wait until snapd is fully seeded.
+Oct 02 21:20:46 grc102-week4 systemd[1]: snapd.autoimport.service - Auto import assertions from block devices was skipped because no trigger condition checks were met.
+Oct 02 21:20:46 grc102-week4 pollinate[981]: client verified challenge/response with [https://entropy.ubuntu.com/]
+Oct 02 21:20:46 grc102-week4 pollinate[988]: client hashed response from [https://entropy.ubuntu.com/]
+Oct 02 21:20:46 grc102-week4 pollinate[989]: client successfully seeded [/dev/urandom]
+Oct 02 21:20:46 grc102-week4 systemd[1]: pollinate.service: Deactivated successfully.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Finished pollinate.service - Pollinate to seed the pseudo random number generator.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Reached target multi-user.target - Multi-User System.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Reached target graphical.target - Graphical Interface.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Starting cloud-final.service - Cloud-init: Final Stage...
+Oct 02 21:20:46 grc102-week4 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Oct 02 21:20:46 grc102-week4 systemd[1]: Starting systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP...
+Oct 02 21:20:46 grc102-week4 systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Finished systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP.
+Oct 02 21:20:46 grc102-week4 sshd[998]: Server listening on 0.0.0.0 port 22.
+Oct 02 21:20:46 grc102-week4 sshd[998]: Server listening on :: port 22.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Oct 02 21:20:46 grc102-week4 sshd[999]: Accepted publickey for ubuntu from 192.168.252.1 port 55249 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+Oct 02 21:20:46 grc102-week4 sshd[999]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Oct 02 21:20:46 grc102-week4 systemd[1]: Created slice user-1000.slice - User Slice of UID 1000.
+Oct 02 21:20:46 grc102-week4 systemd[1]: Starting user-runtime-dir@1000.service - User Runtime Directory /run/user/1000...
+Oct 02 21:20:47 grc102-week4 systemd-logind[778]: New session 1 of user ubuntu.
+Oct 02 21:20:47 grc102-week4 systemd[1]: Finished user-runtime-dir@1000.service - User Runtime Directory /run/user/1000.
+Oct 02 21:20:47 grc102-week4 systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+Oct 02 21:20:47 grc102-week4 (systemd)[1004]: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Queued start job for default target default.target.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Created slice app.slice - User Application Slice.
+Oct 02 21:20:47 grc102-week4 cloud-init[1013]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'modules:final' at Fri, 02 Oct 2026 20:20:47 +0000. Up 9.66 seconds.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Reached target paths.target - Paths.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Reached target timers.target - Timers.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Starting dbus.socket - D-Bus User Message Bus Socket...
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on keyboxd.socket - GnuPG public key management service.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on pk-debconf-helper.socket - debconf communication socket.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on snapd.session-agent.socket - REST API socket for snapd user session agent.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Reached target sockets.target - Sockets.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Reached target basic.target - Basic System.
+Oct 02 21:20:47 grc102-week4 systemd[1]: Started user@1000.service - User Manager for UID 1000.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Reached target default.target - Main User Target.
+Oct 02 21:20:47 grc102-week4 systemd[1004]: Startup finished in 90ms.
+Oct 02 21:20:47 grc102-week4 systemd[1]: Started session-1.scope - Session 1 of User ubuntu.
+Oct 02 21:20:47 grc102-week4 systemd[1]: Starting apt-news.service - Update APT News...
+Oct 02 21:20:47 grc102-week4 systemd[1]: Starting esm-cache.service - Update the local ESM caches...
+Oct 02 21:20:47 grc102-week4 python3[1047]: ["2026-10-02T21:20:47.257", "INFO", "ubuntupro.system", "get_cpu_info", 296, "could not open /proc/sysinfo", {}]
+Oct 02 21:20:47 grc102-week4 python3[1047]: ["2026-10-02T21:20:47.257", "INFO", "ubuntupro.system", "get_cpu_info", 306, "could not open /sys/firmware/devicetree/base/model", {}]
+Oct 02 21:20:47 grc102-week4 snapd[773]: snapmgr.go:1675: performing periodic snap downloads cache cleanup
+Oct 02 21:20:47 grc102-week4 snapd[773]: snapmgr.go:1685: cannot clean store downloads cache: open /var/lib/snapd/cache: no such file or directory
+Oct 02 21:20:49 grc102-week4 systemd[1]: apt-news.service: Deactivated successfully.
+Oct 02 21:20:49 grc102-week4 systemd[1]: Finished apt-news.service - Update APT News.
+Oct 02 21:20:50 grc102-week4 ModemManager[877]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:01.0': not supported by any plugin
+Oct 02 21:20:50 grc102-week4 systemd[1]: dmesg.service: Deactivated successfully.
+Oct 02 21:20:51 grc102-week4 snapd[773]: standby.go:101: standby conditions met, initiating standby...
+Oct 02 21:20:51 grc102-week4 snapd[773]: daemon.go:569: gracefully waiting for running hooks
+Oct 02 21:20:51 grc102-week4 snapd[773]: daemon.go:571: done waiting for running hooks
+Oct 02 21:20:51 grc102-week4 cloud-init[1013]: Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+Oct 02 21:20:51 grc102-week4 cloud-init[1013]: Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+Oct 02 21:20:52 grc102-week4 cloud-init[1013]: Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+Oct 02 21:20:52 grc102-week4 cloud-init[1013]: Get:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+Oct 02 21:20:52 grc102-week4 systemd[1]: esm-cache.service: Deactivated successfully.
+Oct 02 21:20:52 grc102-week4 systemd[1]: Finished esm-cache.service - Update the local ESM caches.
+Oct 02 21:20:52 grc102-week4 cloud-init[1013]: Get:5 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 Packages [15.3 MB]
+Oct 02 21:20:54 grc102-week4 snapd[773]: standby.go:121: standby monitoring stop requested
+Oct 02 21:20:54 grc102-week4 snapd[773]: overlord.go:568: Released state lock file
+Oct 02 21:20:54 grc102-week4 snapd[773]: seclog.go:189: security logger disabled
+Oct 02 21:20:54 grc102-week4 snapd[773]: daemon stop requested to wait for socket activation
+Oct 02 21:20:54 grc102-week4 systemd[1]: snapd.service: Deactivated successfully.
+Oct 02 21:20:54 grc102-week4 cloud-init[1013]: Get:6 http://ports.ubuntu.com/ubuntu-ports noble/universe Translation-en [5982 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:7 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 Components [3573 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:8 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 c-n-f Metadata [295 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:9 http://ports.ubuntu.com/ubuntu-ports noble/multiverse arm64 Packages [223 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:10 http://ports.ubuntu.com/ubuntu-ports noble/multiverse Translation-en [118 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:11 http://ports.ubuntu.com/ubuntu-ports noble/multiverse arm64 Components [31.6 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:12 http://ports.ubuntu.com/ubuntu-ports noble/multiverse arm64 c-n-f Metadata [7152 B]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:13 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [1424 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:14 http://ports.ubuntu.com/ubuntu-ports noble-updates/main Translation-en [304 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:15 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Components [178 kB]
+Oct 02 21:20:56 grc102-week4 cloud-init[1013]: Get:16 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [1736 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:17 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe Translation-en [341 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:18 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Components [387 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:19 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 c-n-f Metadata [33.5 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:20 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages [2571 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:21 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted Translation-en [394 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:22 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Packages [78.0 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:23 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse Translation-en [13.1 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:24 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Components [212 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:25 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 c-n-f Metadata [472 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:26 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Packages [40.7 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:27 http://ports.ubuntu.com/ubuntu-ports noble-backports/main Translation-en [9172 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:28 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Components [3572 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:29 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 c-n-f Metadata [372 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:30 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Packages [31.3 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:31 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe Translation-en [18.6 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:32 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Components [12.6 kB]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:33 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 c-n-f Metadata [1592 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:34 http://ports.ubuntu.com/ubuntu-ports noble-backports/restricted arm64 Components [212 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:35 http://ports.ubuntu.com/ubuntu-ports noble-backports/restricted arm64 c-n-f Metadata [116 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:36 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 Packages [748 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:37 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse Translation-en [340 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:38 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 Components [212 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:39 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 c-n-f Metadata [116 B]
+Oct 02 21:20:57 grc102-week4 cloud-init[1013]: Get:40 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [1133 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:41 http://ports.ubuntu.com/ubuntu-ports noble-security/main Translation-en [221 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:42 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Components [43.3 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:43 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Packages [1286 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:44 http://ports.ubuntu.com/ubuntu-ports noble-security/universe Translation-en [244 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:45 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Components [76.3 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:46 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 c-n-f Metadata [23.7 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:47 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages [2371 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:48 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted Translation-en [361 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:49 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Packages [73.7 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:50 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse Translation-en [11.3 kB]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:51 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Components [208 B]
+Oct 02 21:20:58 grc102-week4 cloud-init[1013]: Get:52 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 c-n-f Metadata [456 B]
+Oct 02 21:20:59 grc102-week4 dbus-daemon[763]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.14' (uid=0 pid=1413 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Oct 02 21:20:59 grc102-week4 systemd[1]: Starting packagekit.service - PackageKit Daemon...
+Oct 02 21:20:59 grc102-week4 PackageKit[1417]: daemon start
+Oct 02 21:20:59 grc102-week4 dbus-daemon[763]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Oct 02 21:20:59 grc102-week4 systemd[1]: Started packagekit.service - PackageKit Daemon.
+Oct 02 21:21:02 grc102-week4 cloud-init[1013]: Fetched 39.3 MB in 12s (3312 kB/s)
+Oct 02 21:21:02 grc102-week4 cloud-init[1013]: Reading package lists...
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: Reading package lists...
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: Building dependency tree...
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: Reading state information...
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: pollinate is already the newest version (4.33-3.1ubuntu1.3).
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: pollinate set to manually installed.
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: 0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+Oct 02 21:21:03 grc102-week4 cloud-init[1495]: #############################################################
+Oct 02 21:21:03 grc102-week4 cloud-init[1496]: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+Oct 02 21:21:03 grc102-week4 cloud-init[1498]: 256 SHA256:GF5S16i2VZyRbRbs354I+ZsF5mknjMG9fKvm22kOPX4 root@grc102-week4 (ECDSA)
+Oct 02 21:21:03 grc102-week4 cloud-init[1500]: 256 SHA256:WzgUawN2CbxhesrzFePrhCjJBpKuYvtwySyn3w8mktU root@grc102-week4 (ED25519)
+Oct 02 21:21:03 grc102-week4 cloud-init[1502]: 3072 SHA256:ekRVMYztgMyNabO8gl2+ifVgJaHHFVbm7OvaigVcZDw root@grc102-week4 (RSA)
+Oct 02 21:21:03 grc102-week4 cloud-init[1503]: -----END SSH HOST KEY FINGERPRINTS-----
+Oct 02 21:21:03 grc102-week4 cloud-init[1504]: #############################################################
+Oct 02 21:21:03 grc102-week4 cloud-init[1013]: Cloud-init v. 26.1-0ubuntu1~24.04.1 finished at Fri, 02 Oct 2026 20:21:03 +0000. Datasource DataSourceNoCloud [seed=/dev/vda].  Up 26.02 seconds
+Oct 02 21:21:03 grc102-week4 systemd[1]: Finished cloud-final.service - Cloud-init: Final Stage.
+Oct 02 21:21:03 grc102-week4 systemd[1]: Reached target cloud-init.target - Cloud-init target.
+Oct 02 21:21:03 grc102-week4 systemd[1]: Startup finished in 1.837s (kernel) + 24.236s (userspace) = 26.074s.
+Oct 02 21:21:10 grc102-week4 systemd[1]: systemd-fsckd.service: Deactivated successfully.
+Oct 02 21:21:16 grc102-week4 systemd[1]: systemd-timedated.service: Deactivated successfully.
+Oct 02 21:21:26 grc102-week4 systemd-timesyncd[501]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Oct 02 21:21:26 grc102-week4 systemd-timesyncd[501]: Contacted time server 185.125.190.58:123 (ntp.ubuntu.com).
+Oct 02 21:21:26 grc102-week4 systemd-timesyncd[501]: Initial clock synchronization to Fri 2026-10-02 21:21:27.038399 WAT.
+Oct 02 21:21:30 grc102-week4 sshd[1514]: Accepted publickey for ubuntu from 192.168.252.1 port 55433 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+Oct 02 21:21:30 grc102-week4 sshd[1514]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Oct 02 21:21:30 grc102-week4 systemd-logind[778]: New session 3 of user ubuntu.
+Oct 02 21:21:30 grc102-week4 systemd[1]: Started session-3.scope - Session 3 of User ubuntu.
+Oct 02 21:21:44 grc102-week4 dbus-daemon[763]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.18' (uid=1000 pid=1578 comm="hostnamectl" label="unconfined")
+Oct 02 21:21:44 grc102-week4 systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Oct 02 21:21:44 grc102-week4 dbus-daemon[763]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Oct 02 21:21:44 grc102-week4 systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+Oct 02 21:22:01 grc102-week4 sudo[1581]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 02 21:22:01 grc102-week4 sudo[1581]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:22:01 grc102-week4 systemd[1]: Starting apt-news.service - Update APT News...
+Oct 02 21:22:01 grc102-week4 systemd[1]: Starting esm-cache.service - Update the local ESM caches...
+Oct 02 21:22:01 grc102-week4 systemd[1]: apt-news.service: Deactivated successfully.
+Oct 02 21:22:01 grc102-week4 systemd[1]: Finished apt-news.service - Update APT News.
+Oct 02 21:22:02 grc102-week4 systemd[1]: esm-cache.service: Deactivated successfully.
+Oct 02 21:22:02 grc102-week4 systemd[1]: Finished esm-cache.service - Update the local ESM caches.
+Oct 02 21:22:04 grc102-week4 sudo[1581]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:22:04 grc102-week4 sudo[1853]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/apt install -y auditd audispd-plugins lynis
+Oct 02 21:22:04 grc102-week4 sudo[1853]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:22:07 grc102-week4 systemd[1]: Reloading requested from client PID 1990 ('systemctl') (unit session-3.scope)...
+Oct 02 21:22:07 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:22:07 grc102-week4 systemd[1]: Reloading finished in 130 ms.
+Oct 02 21:22:07 grc102-week4 systemd[1]: Started lynis.timer - Daily timer for the Lynis security audit and vulnerability scanner.
+Oct 02 21:22:07 grc102-week4 systemd[1]: Reloading requested from client PID 2070 ('systemctl') (unit session-3.scope)...
+Oct 02 21:22:07 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:22:07 grc102-week4 systemd[1]: Reloading finished in 110 ms.
+Oct 02 21:22:08 grc102-week4 systemd[1]: Reloading requested from client PID 2122 ('systemctl') (unit session-3.scope)...
+Oct 02 21:22:08 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:22:08 grc102-week4 systemd[1]: Reloading finished in 112 ms.
+Oct 02 21:22:08 grc102-week4 systemd[1]: Starting auditd.service - Security Auditing Service...
+Oct 02 21:22:08 grc102-week4 auditd[2172]: No plugins found, not dispatching events
+Oct 02 21:22:08 grc102-week4 auditd[2172]: Init complete, auditd 3.1.2 listening for events (startup state enable)
+Oct 02 21:22:08 grc102-week4 augenrules[2175]: /sbin/augenrules: No change
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: No rules
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: enabled 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: failure 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: pid 2172
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: rate_limit 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_limit 8192
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: lost 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time 60000
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time_actual 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: enabled 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: failure 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: pid 2172
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: rate_limit 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_limit 8192
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: lost 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog 4
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time 60000
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time_actual 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: enabled 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: failure 1
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: pid 2172
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: rate_limit 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_limit 8192
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: lost 0
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog 4
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time 60000
+Oct 02 21:22:08 grc102-week4 augenrules[2186]: backlog_wait_time_actual 0
+Oct 02 21:22:08 grc102-week4 systemd[1]: Started auditd.service - Security Auditing Service.
+Oct 02 21:22:12 grc102-week4 sudo[1853]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:22:12 grc102-week4 sudo[2373]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/systemctl enable --now auditd
+Oct 02 21:22:12 grc102-week4 sudo[2373]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading requested from client PID 2379 ('systemctl') (unit session-3.scope)...
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading finished in 119 ms.
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading requested from client PID 2423 ('systemctl') (unit session-3.scope)...
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading finished in 109 ms.
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading requested from client PID 2375 ('systemctl') (unit session-3.scope)...
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading...
+Oct 02 21:22:12 grc102-week4 sudo[2373]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:22:12 grc102-week4 systemd[1]: Reloading finished in 114 ms.
+Oct 02 21:22:12 grc102-week4 sudo[2509]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/systemctl status auditd --no-pager
+Oct 02 21:22:12 grc102-week4 sudo[2509]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:22:12 grc102-week4 sudo[2509]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:22:12 grc102-week4 sudo[2513]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/auditctl -s
+Oct 02 21:22:12 grc102-week4 sudo[2513]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:22:12 grc102-week4 sudo[2513]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:22:14 grc102-week4 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Oct 02 21:25:01 grc102-week4 CRON[2522]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 02 21:25:01 grc102-week4 CRON[2523]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 02 21:25:01 grc102-week4 CRON[2522]: pam_unix(cron:session): session closed for user root
+Oct 02 21:25:32 grc102-week4 sudo[2525]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/nano /etc/audit/rules.d/custom.rules
+Oct 02 21:25:32 grc102-week4 sudo[2525]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:25:41 grc102-week4 sudo[2525]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:25:41 grc102-week4 systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...
+Oct 02 21:25:41 grc102-week4 systemd[1]: update-notifier-download.service: Deactivated successfully.
+Oct 02 21:25:41 grc102-week4 systemd[1]: Finished update-notifier-download.service - Download data for packages that failed at package install time.
+Oct 02 21:26:07 grc102-week4 sudo[2533]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/nano /etc/audit/rules.d/custom.rules
+Oct 02 21:26:07 grc102-week4 sudo[2533]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:26:16 grc102-week4 sudo[2533]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:26:20 grc102-week4 systemd[1004]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache was skipped because of an unmet condition check (ConditionPathExists=/home/ubuntu/.launchpadlib/api.launchpad.net/cache).
+Oct 02 21:26:27 grc102-week4 sudo[2536]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/cat /etc/audit/rules.d/custom.rules
+Oct 02 21:26:27 grc102-week4 sudo[2536]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:26:27 grc102-week4 sudo[2536]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:26:53 grc102-week4 sudo[2539]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/systemctl restart auditd
+Oct 02 21:26:53 grc102-week4 sudo[2539]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:26:53 grc102-week4 systemd[1]: Stopping auditd.service - Security Auditing Service...
+Oct 02 21:26:53 grc102-week4 auditd[2172]: The audit daemon is exiting.
+Oct 02 21:26:53 grc102-week4 kernel: audit: type=1305 audit(1790972813.172:271): op=set audit_pid=0 old=2172 auid=4294967295 ses=4294967295 subj=unconfined res=1
+Oct 02 21:26:53 grc102-week4 systemd[1]: auditd.service: Deactivated successfully.
+Oct 02 21:26:53 grc102-week4 systemd[1]: Stopped auditd.service - Security Auditing Service.
+Oct 02 21:26:53 grc102-week4 kernel: audit: type=1131 audit(1790972813.175:272): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=auditd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Oct 02 21:26:53 grc102-week4 systemd[1]: Starting auditd.service - Security Auditing Service...
+Oct 02 21:26:53 grc102-week4 auditd[2546]: No plugins found, not dispatching events
+Oct 02 21:26:53 grc102-week4 kernel: audit: type=1305 audit(1790972813.188:273): op=set audit_enabled=1 old=1 auid=4294967295 ses=4294967295 subj=unconfined res=1
+Oct 02 21:26:53 grc102-week4 kernel: audit: type=1300 audit(1790972813.188:273): arch=c00000b7 syscall=206 success=yes exit=60 a0=3 a1=fffff697c510 a2=3c a3=0 items=0 ppid=2545 pid=2546 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditd" exe="/usr/sbin/auditd" subj=unconfined key=(null)
+Oct 02 21:26:53 grc102-week4 kernel: audit: type=1327 audit(1790972813.188:273): proctitle="/sbin/auditd"
+Oct 02 21:26:53 grc102-week4 auditd[2546]: Init complete, auditd 3.1.2 listening for events (startup state enable)
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: No rules
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: enabled 1
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: failure 1
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: pid 2546
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: rate_limit 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_limit 8192
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: lost 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_wait_time 60000
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_wait_time_actual 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: enabled 1
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: failure 1
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: pid 2546
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: rate_limit 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_limit 8192
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: lost 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_wait_time 60000
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_wait_time_actual 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: enabled 1
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: failure 1
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: pid 2546
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: rate_limit 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_limit 8192
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: lost 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog 0
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_wait_time 60000
+Oct 02 21:26:53 grc102-week4 augenrules[2564]: backlog_wait_time_actual 0
+Oct 02 21:26:53 grc102-week4 systemd[1]: Started auditd.service - Security Auditing Service.
+Oct 02 21:26:53 grc102-week4 sudo[2539]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:27:05 grc102-week4 sudo[2573]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/auditctl -l
+Oct 02 21:27:05 grc102-week4 sudo[2573]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:27:05 grc102-week4 sudo[2573]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:27:14 grc102-week4 PackageKit[1417]: daemon quit
+Oct 02 21:27:14 grc102-week4 systemd[1]: packagekit.service: Deactivated successfully.
+Oct 02 21:27:20 grc102-week4 sudo[2579]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/nano /etc/passwd
+Oct 02 21:27:20 grc102-week4 sudo[2579]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:27:39 grc102-week4 sudo[2579]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:28:03 grc102-week4 sudo[2583]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/ausearch -k passwd_changes
+Oct 02 21:28:03 grc102-week4 sudo[2583]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:28:03 grc102-week4 sudo[2583]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:28:03 grc102-week4 sudo[2587]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/ausearch -k program_execution
+Oct 02 21:28:03 grc102-week4 sudo[2587]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:28:04 grc102-week4 sudo[2587]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:29:20 grc102-week4 sudo[2591]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/ausearch -k auth_failures
+Oct 02 21:29:20 grc102-week4 sudo[2591]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:29:20 grc102-week4 sudo[2591]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:30:20 grc102-week4 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Oct 02 21:30:21 grc102-week4 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Oct 02 21:30:21 grc102-week4 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Oct 02 21:30:28 grc102-week4 sudo[2598]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/aureport
+Oct 02 21:30:28 grc102-week4 sudo[2598]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:30:28 grc102-week4 sudo[2598]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:30:40 grc102-week4 sudo[2602]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/aureport --failed
+Oct 02 21:30:40 grc102-week4 sudo[2602]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:30:40 grc102-week4 sudo[2602]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:30:47 grc102-week4 sudo[2609]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/aureport --login
+Oct 02 21:30:47 grc102-week4 sudo[2609]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:30:47 grc102-week4 sudo[2609]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:31:00 grc102-week4 sudo[2613]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/ausearch -k passwd_changes -i --start today
+Oct 02 21:31:00 grc102-week4 sudo[2613]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:31:00 grc102-week4 sudo[2613]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:31:20 grc102-week4 sudo[2618]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/sbin/ausearch -k program_execution -i --start today
+Oct 02 21:31:20 grc102-week4 sudo[2618]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:31:20 grc102-week4 sudo[2618]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:35:01 grc102-week4 CRON[2623]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 02 21:35:01 grc102-week4 CRON[2624]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 02 21:35:01 grc102-week4 CRON[2623]: pam_unix(cron:session): session closed for user root
+Oct 02 21:35:41 grc102-week4 systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+Oct 02 21:35:41 grc102-week4 systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+Oct 02 21:35:41 grc102-week4 systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+Oct 02 21:40:21 grc102-week4 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Oct 02 21:40:21 grc102-week4 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Oct 02 21:40:21 grc102-week4 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Oct 02 21:43:05 grc102-week4 sudo[2636]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/journalctl
+Oct 02 21:43:05 grc102-week4 sudo[2636]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:43:14 grc102-week4 sudo[2636]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:43:22 grc102-week4 sudo[2641]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Oct 02 21:43:22 grc102-week4 sudo[2641]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:43:22 grc102-week4 sudo[2641]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:43:38 grc102-week4 sudo[2646]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/journalctl --since today --no-pager
+Oct 02 21:43:38 grc102-week4 sudo[2646]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:43:38 grc102-week4 sudo[2646]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:43:54 grc102-week4 sudo[2650]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/journalctl -p err --no-pager
+Oct 02 21:43:54 grc102-week4 sudo[2650]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:43:55 grc102-week4 sudo[2650]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:44:15 grc102-week4 sudo[2654]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/grc102-week4-evidence ; USER=root ; COMMAND=/usr/bin/journalctl -f
+Oct 02 21:44:15 grc102-week4 sudo[2654]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:45:01 grc102-week4 CRON[2657]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 02 21:45:01 grc102-week4 CRON[2658]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 02 21:45:01 grc102-week4 CRON[2657]: pam_unix(cron:session): session closed for user root
+Oct 02 21:46:10 grc102-week4 sshd[2662]: Accepted publickey for ubuntu from 192.168.252.1 port 61679 ssh2: RSA SHA256:dSAwLjWSBbuWetCsSJtPkGTZ+yLQSh+2TmtxE3zDuJE
+Oct 02 21:46:10 grc102-week4 sshd[2662]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Oct 02 21:46:10 grc102-week4 systemd-logind[778]: New session 7 of user ubuntu.
+Oct 02 21:46:10 grc102-week4 systemd[1]: Started session-7.scope - Session 7 of User ubuntu.
+Oct 02 21:46:22 grc102-week4 sudo[2730]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/true
+Oct 02 21:46:22 grc102-week4 sudo[2730]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:46:22 grc102-week4 sudo[2730]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:46:49 grc102-week4 sudo[2654]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:47:14 grc102-week4 sudo[2733]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/less /var/log/auth.log
+Oct 02 21:47:14 grc102-week4 sudo[2733]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:49:28 grc102-week4 sudo[2733]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:49:39 grc102-week4 sudo[2736]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep -i 'failed password' /var/log/auth.log
+Oct 02 21:49:39 grc102-week4 sudo[2736]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:49:39 grc102-week4 sudo[2736]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:49:54 grc102-week4 sudo[2740]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep -i sudo /var/log/auth.log
+Oct 02 21:49:54 grc102-week4 sudo[2740]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:49:54 grc102-week4 sudo[2740]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:50:11 grc102-week4 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Oct 02 21:50:11 grc102-week4 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Oct 02 21:50:11 grc102-week4 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Oct 02 21:50:19 grc102-week4 sudo[2749]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/less /var/log/syslog
+Oct 02 21:50:19 grc102-week4 sudo[2749]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:50:21 grc102-week4 sudo[2749]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:50:33 grc102-week4 sudo[2752]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep -i error /var/log/syslog
+Oct 02 21:50:33 grc102-week4 sudo[2752]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:50:33 grc102-week4 sudo[2752]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:50:33 grc102-week4 sudo[2756]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep -i warning /var/log/syslog
+Oct 02 21:50:33 grc102-week4 sudo[2756]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:50:33 grc102-week4 sudo[2756]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:55:01 grc102-week4 CRON[2763]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 02 21:55:01 grc102-week4 CRON[2764]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 02 21:55:01 grc102-week4 CRON[2763]: pam_unix(cron:session): session closed for user root
+Oct 02 21:56:31 grc102-week4 sudo[2767]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/journalctl
+Oct 02 21:56:31 grc102-week4 sudo[2767]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:56:37 grc102-week4 sudo[2767]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:56:45 grc102-week4 sudo[2771]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Oct 02 21:56:45 grc102-week4 sudo[2771]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Oct 02 21:56:45 grc102-week4 sudo[2771]: pam_unix(sudo:session): session closed for user root
+Oct 02 21:56:58 grc102-week4 sudo[2775]:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/journalctl --since today --no-pager
+Oct 02 21:56:58 grc102-week4 sudo[2775]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)

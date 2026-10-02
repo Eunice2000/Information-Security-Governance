@@ -1,0 +1,2 @@
+2026-10-02T20:49:39.257106+00:00 grc102-week4 sudo:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep -i 'failed password' /var/log/auth.log
+2026-10-02T21:01:30.191271+00:00 grc102-week4 sudo:   ubuntu : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/grep -i 'failed password' /var/log/auth.log

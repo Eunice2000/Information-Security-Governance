@@ -1,0 +1,10 @@
+Oct 02 21:20:39 ubuntu kernel: KASLR disabled due to lack of seed
+Oct 02 21:20:39 ubuntu kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct 02 21:20:39 ubuntu kernel: sd 0:0:0:0: Power-on or device reset occurred
+Oct 02 21:20:39 ubuntu kernel: GPT:Primary header thinks Alt. header is not at the end of the disk.
+Oct 02 21:20:39 ubuntu kernel: GPT:7340031 != 20971519
+Oct 02 21:20:39 ubuntu kernel: GPT:Alternate GPT header not at the end of the disk.
+Oct 02 21:20:39 ubuntu kernel: GPT:7340031 != 20971519
+Oct 02 21:20:39 ubuntu kernel: GPT: Use GNU Parted to correct GPT errors.
+Oct 02 21:20:45 grc102-week4 (cron)[762]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Oct 02 21:20:45 grc102-week4 kernel: kauditd_printk_skb: 108 callbacks suppressed

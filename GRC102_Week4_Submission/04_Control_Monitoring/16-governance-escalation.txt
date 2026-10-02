@@ -1,0 +1,25 @@
+GRC102 Week 4 - Governance Escalation Assessment
+
+1. Which finding is the highest priority and why?
+
+The vulnerable packages finding (PKGS-7392) is the highest priority. Lynis identified one or more vulnerable packages on the system. Known vulnerabilities can increase the likelihood of exploitation if applicable security updates are not assessed and applied. The affected packages should therefore be identified and reviewed promptly.
+
+2. Who should own remediation for each major finding?
+
+- Vulnerable packages: Linux/System Administrator, supported by the Vulnerability Management function.
+- Security repository configuration: Linux/System Administrator.
+- Firewall configuration: Linux/System Administrator, with Security Operations where firewall standards or monitoring are centrally managed.
+
+Control ownership should remain clear so that remediation can be assigned, tracked and independently verified.
+
+3. What threshold or condition should trigger escalation to the CISO, Risk function or management committee?
+
+Escalation should occur when a security issue exceeds the organisation's approved risk tolerance or remediation timeframe. Examples include critical vulnerabilities remaining unresolved beyond the approved SLA, repeated or unexplained privileged-access activity, loss of required security logging, ineffective network controls, repeated authentication failures indicating possible attack activity, or overdue high-risk remediation.
+
+4. What evidence would demonstrate successful remediation?
+
+Successful remediation should be demonstrated through objective technical evidence. Examples include a clean or improved Lynis result, evidence that vulnerable packages were updated, confirmation that approved security repositories are configured and functioning, an effective firewall ruleset, active audit rules, and logs demonstrating that authentication and privileged activity continue to be recorded.
+
+5. When and how should the control be retested?
+
+High-risk findings should be retested immediately after remediation and within the organisation's approved remediation timeframe. Retesting should repeat the original procedure wherever possible so that before-and-after evidence can be compared. This may include re-running Lynis, reviewing package status, checking firewall rules, confirming auditd rules, and reviewing authentication and system logs.

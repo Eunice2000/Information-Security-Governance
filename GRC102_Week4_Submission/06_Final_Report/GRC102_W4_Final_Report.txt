@@ -1,0 +1,218 @@
+GRC102 INFORMATION SECURITY GOVERNANCE
+WEEK 4 PRACTICAL LABORATORY
+
+MONITORING AND AUDITING SECURITY CONTROLS
+
+Student Name: Adediran Eunice Adebukola
+Registration Number: C11-26-CGRCE-17595
+Organisation: Meridian Digital Services
+Submission Date: 2 October 2026
+
+
+1. EXECUTIVE SUMMARY
+
+This practical assessed Linux security monitoring and auditing controls using auditd, journalctl, authentication logs and Lynis. The objective was to collect technical evidence, assess security-relevant conditions and translate the results into governance and control-assurance information.
+
+The assessment confirmed that auditd was operational and capable of recording security-relevant activity. Authentication and privileged activity were also available for review through Linux logs. Lynis produced a hardening index of 60 after 257 tests and identified three explicit warnings: a security repository was not detected, one or more vulnerable packages were identified, and iptables modules were loaded without active rules.
+
+The vulnerable-package finding was considered the highest-priority condition because known vulnerable software may increase exposure to exploitation if applicable updates are not assessed and applied. The assessment also demonstrated how Linux security evidence can support continuous control monitoring, SIEM correlation, remediation tracking and governance escalation.
+
+
+2. SCOPE AND AUTHORISATION
+
+The assessment was conducted as an authorised GRC102 Week 4 practical laboratory against the designated Ubuntu virtual machine.
+
+The scope covered:
+- Linux audit configuration and security event generation using auditd.
+- System, authentication and privileged-access log review.
+- Linux security assessment using Lynis.
+- Translation of technical evidence into control-monitoring and governance information.
+- Conceptual mapping of Linux evidence into SIEM and continuous monitoring processes.
+
+Testing was limited to the authorised laboratory environment. No destructive testing or unauthorised access activity was performed.
+
+
+3. METHODOLOGY
+
+The assessment used an evidence-based approach across four areas.
+
+First, auditd status and loaded audit rules were reviewed. Audit rules were used to monitor sensitive files, authentication-related evidence and program execution. Benign activity was generated and audit events were reviewed using ausearch and aureport.
+
+Second, Linux system and authentication logs were reviewed using journalctl and /var/log/auth.log. The review considered system errors and warnings, SSH authentication, failed-password indicators and sudo activity.
+
+Third, Lynis version 3.0.9 was used to perform a system security assessment. The hardening index, warnings, suggestions and underlying Lynis report and log were retained as evidence.
+
+Finally, the technical results were translated into control-monitoring, remediation, retesting and governance-escalation requirements. The evidence sources were also mapped conceptually to SIEM and continuous control-monitoring processes.
+
+
+4. KEY FINDINGS
+
+4.1 Security Repository Not Detected
+
+Evidence:
+Lynis warning PKGS-7388 reported that it could not identify a security repository in the configured APT sources.
+
+Risk / Control Issue:
+If the appropriate security-update source is not correctly configured or functioning, timely receipt of security patches may be affected. The repository configuration therefore requires validation.
+
+Owner:
+Linux/System Administrator
+
+Priority:
+High
+
+Recommended Remediation:
+Review the configured APT repositories and confirm that the appropriate Ubuntu security repository is enabled and functioning.
+
+Retest:
+Verify the configured APT sources and repeat the relevant Lynis package-management check.
+
+
+4.2 Vulnerable Packages Detected
+
+Evidence:
+Lynis warning PKGS-7392 identified one or more vulnerable packages.
+
+Risk / Control Issue:
+Known vulnerable software may increase the likelihood of exploitation if affected packages remain unpatched.
+
+Owner:
+Linux/System Administrator / Vulnerability Management
+
+Priority:
+High
+
+Recommended Remediation:
+Identify the affected packages, assess applicable security updates and apply approved updates in accordance with the patch-management process.
+
+Retest:
+Repeat package vulnerability checks and rerun Lynis after remediation.
+
+
+4.3 iptables Loaded Without Active Rules
+
+Evidence:
+Lynis warning FIRE-4512 reported that iptables modules were loaded without active rules. Lynis also reported the host-based firewall component as active.
+
+Risk / Control Issue:
+The effective host-level network filtering configuration requires validation. The warning alone does not establish that the host has no firewall protection.
+
+Owner:
+Linux/System Administrator / Security Operations
+
+Priority:
+Moderate
+
+Recommended Remediation:
+Review the intended firewall architecture and confirm which firewall framework provides the required network filtering. Where iptables rules are required, implement approved rules based on the system's network requirements.
+
+Retest:
+Review the effective firewall configuration and rerun the Lynis firewall assessment.
+
+
+5. CONTROL-MONITORING ASSESSMENT
+
+Control 1: Security auditing of sensitive system activity
+Evidence: auditd was enabled and custom audit rules monitored sensitive files and program execution.
+Observed Status: Operating.
+Threshold: auditd and required audit rules should remain active.
+Follow-up: Periodically verify auditd status, loaded rules and generated events.
+
+Control 2: Authentication and privileged-access monitoring
+Evidence: Authentication logs recorded SSH public-key authentication and sudo activity.
+Observed Status: Operating.
+Threshold: Authentication and privileged activity should remain logged. Repeated failed authentication or unexplained privileged activity should trigger investigation.
+Follow-up: Periodically review authentication and sudo events.
+
+Control 3: Vulnerability and patch management
+Evidence: Lynis warning PKGS-7392.
+Observed Status: Requires Remediation.
+Threshold: Known vulnerable packages should be assessed and remediated within approved patch-management timelines.
+Follow-up: Apply approved remediation and repeat vulnerability checks.
+
+Control 4: Secure package-update configuration
+Evidence: Lynis warning PKGS-7388.
+Observed Status: Requires Validation.
+Threshold: Approved security-update repositories should be configured and accessible.
+Follow-up: Validate the repository configuration and repeat the Lynis check.
+
+Control 5: Host network filtering
+Evidence: Lynis warning FIRE-4512 and host-based firewall status.
+Observed Status: Requires Validation.
+Threshold: Network filtering should operate according to the approved firewall baseline.
+Follow-up: Validate the effective firewall configuration and repeat the assessment.
+
+
+6. GOVERNANCE ESCALATION
+
+The vulnerable-package finding represents the highest-priority condition identified during the assessment because known vulnerabilities may create an exploitable weakness if applicable remediation is not completed.
+
+Remediation ownership should be assigned according to the affected control. Vulnerable packages should be owned by the Linux/System Administrator with Vulnerability Management support. Package repository configuration should be owned by the Linux/System Administrator. Firewall configuration should be owned by the Linux/System Administrator with Security Operations involvement where appropriate.
+
+Escalation to the CISO, Risk function or relevant management forum should occur where a condition exceeds approved risk tolerance or remediation timelines. Examples include unresolved critical vulnerabilities, repeated unexplained privileged access, loss of required audit logging, ineffective network controls or overdue high-risk remediation.
+
+Successful remediation should be supported by objective technical evidence, including updated package status, validated security repositories, effective firewall configuration, active audit rules and subsequent assessment results.
+
+Controls should be retested after remediation using procedures comparable to the original test so that before-and-after evidence can be evaluated.
+
+
+7. SIEM AND CONTINUOUS MONITORING MAPPING
+
+auditd events can be forwarded to a central SIEM to identify unexpected sensitive-file activity, suspicious program execution and failures of required auditing controls.
+
+Authentication and sudo logs can support correlation of failed authentication, unusual SSH activity and unexpected privileged operations.
+
+System logs collected through journalctl can provide visibility into service failures, kernel warnings and security-relevant system conditions.
+
+Lynis results can feed vulnerability or configuration-monitoring processes so that identified weaknesses can be assigned, tracked, remediated and retested.
+
+Technical operational alerts and governance issues should be distinguished. An individual event may require operational investigation, while repeated failures, control gaps, threshold breaches or overdue remediation may indicate a control-assurance issue requiring management escalation.
+
+
+8. REMEDIATION AND RETEST PLAN
+
+High-priority vulnerable-package and security-repository findings should be reviewed promptly by the responsible system owner.
+
+The firewall warning should be validated against the intended firewall architecture before configuration changes are made.
+
+Following remediation, the original assessment procedures should be repeated where possible. This includes rerunning Lynis, checking package status, validating APT sources, reviewing the effective firewall configuration, confirming auditd status and rules, and reviewing authentication and system logs.
+
+Evidence of successful remediation should be retained to demonstrate closure. Findings that remain unresolved beyond approved risk or remediation thresholds should be escalated through the appropriate governance process.
+
+
+9. CONCLUSION
+
+The practical demonstrated how Linux technical evidence can support security monitoring, audit assurance and governance oversight.
+
+auditd and Linux authentication logs provided evidence of security-relevant and privileged activity. Lynis provided a broader security assessment with a hardening index of 60, 257 tests performed, three explicit warnings and 45 suggestions.
+
+The results demonstrate that effective security assurance requires more than collecting logs or generating findings. Evidence must be connected to control objectives, ownership, thresholds, remediation, retesting and escalation so that technical conditions can be managed through an accountable governance process.
+
+
+10. APPENDIX - EVIDENCE INDEX
+
+Evidence Bundle 1 - Auditd Configuration and Events
+Folder: 01_Auditd_Evidence
+Includes system information, auditd status, auditctl status, active audit rules, generated audit events and aureport results.
+
+Evidence Bundle 2 - Linux Log Analysis
+Folder: 02_Log_Analysis
+Includes journalctl output, warning/error review, authentication evidence, sudo activity, SSH activity, failed-login review, analysis and event-review table.
+
+Evidence Bundle 3 - Lynis Security Assessment
+Folder: 03_Lynis_Assessment
+Includes key Lynis results, raw Lynis report, Lynis log and documented findings.
+
+Evidence Bundle 4 - Control Monitoring and Governance
+Folder: 04_Control_Monitoring
+Includes the control-monitoring table and governance-escalation assessment.
+
+Evidence Bundle 5 - SIEM and Automation Mapping
+Folder: 05_SIEM_Automation
+Includes the SIEM and continuous-monitoring mapping.
+
+Evidence Bundle 6 - Final Audit Report
+Folder: 06_Final_Report
+Contains this consolidated audit/control-assurance report.
+
+END OF REPORT

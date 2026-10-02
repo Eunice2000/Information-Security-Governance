@@ -1,0 +1,14 @@
+ Static hostname: grc102-week4
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: 3b01796509243d68adacc07d52549a67
+         Boot ID: fd5302896f354b7a9520e4d352212dc7
+  Virtualization: qemu
+Operating System: Ubuntu 24.04.5 LTS
+          Kernel: Linux 6.8.0-142-generic
+    Architecture: arm64
+ Hardware Vendor: QEMU
+  Hardware Model: QEMU Virtual Machine
+Firmware Version: edk2-stable202302-for-qemu
+   Firmware Date: Wed 2023-03-01
+    Firmware Age: 3y 7month 3d
