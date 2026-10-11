@@ -1,0 +1,4 @@
+Security governance metrics and reporting generated:
+- Executive Dashboard: executive_dashboard.html
+- Board Report: board_report.md
+- Visualizations: metrics_visualizations/patch_compliance.png, metrics_visualizations/vuln_remediation.png, metrics_visualizations/security_incidents.png, metrics_visualizations/monitoring_coverage.png, metrics_visualizations/policy_compliance.png

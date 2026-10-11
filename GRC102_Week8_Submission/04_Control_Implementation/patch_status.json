@@ -1,0 +1,5 @@
+{
+  "struts_patched": true,
+  "mysql_secured": true,
+  "network_segmented": true
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-10-11T15:47:02.322299",
+  "failures": [
+    {
+      "category": "Patch Management",
+      "description": "Unpatched Apache Struts2 S2-045 (CVE-2017-5638) with Critical severity",
+      "impact": "System vulnerable to exploitation",
+      "recommendation": "Update to Struts 2.3.32 or Struts 2.5.10.1"
+    },
+    {
+      "category": "Patch Management",
+      "description": "Unpatched MySQL using default credentials with High severity",
+      "impact": "System vulnerable to exploitation",
+      "recommendation": "Change default credentials and restrict access"
+    },
+    {
+      "category": "Incident Detection",
+      "description": "Successful Struts S2-045 Exploitation attack not detected",
+      "impact": "Unauthorized access to customer_data database",
+      "recommendation": "Implement real-time security monitoring and alerting"
+    },
+    {
+      "category": "Policy Implementation",
+      "description": "Patch Management Policy not effectively implemented",
+      "impact": "Critical vulnerabilities remain unpatched despite policy",
+      "recommendation": "Improve patch management process and oversight"
+    },
+    {
+      "category": "Vulnerability Management",
+      "description": "Vulnerability Management Policy not effectively implemented",
+      "impact": "Critical vulnerabilities not remediated in a timely manner",
+      "recommendation": "Improve vulnerability management process and oversight"
+    },
+    {
+      "category": "Metrics and Measurement",
+      "description": "Security metrics not driving effective remediation",
+      "impact": "Metrics not leading to security improvements",
+      "recommendation": "Implement actionable metrics with clear ownership and accountability"
+    },
+    {
+      "category": "Security Architecture",
+      "description": "Insufficient network segmentation",
+      "impact": "Potential for lateral movement and expanded compromise",
+      "recommendation": "Implement network segmentation according to least privilege principle"
+    },
+    {
+      "category": "Authentication and Access Control",
+      "description": "Weak database authentication",
+      "impact": "Potential for unauthorized database access",
+      "recommendation": "Implement strong authentication and access controls for databases"
+    }
+  ],
+  "summary": {
+    "total_failures": 8,
+    "categories": {
+      "Patch Management": 2,
+      "Incident Detection": 1,
+      "Policy Implementation": 1,
+      "Vulnerability Management": 1,
+      "Metrics and Measurement": 1,
+      "Security Architecture": 1,
+      "Authentication and Access Control": 1
+    }
+  }
+}

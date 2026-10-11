@@ -1,0 +1,9 @@
+Governance failure analysis completed. Report saved to governance_failure_report_20261011_154702.json
+Summary: 8 governance failures identified
+  Patch Management: 2
+  Incident Detection: 1
+  Policy Implementation: 1
+  Vulnerability Management: 1
+  Metrics and Measurement: 1
+  Security Architecture: 1
+  Authentication and Access Control: 1

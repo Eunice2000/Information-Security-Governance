@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Governance Executive Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            flex: 1 1 300px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .metric-label {
+            font-weight: bold;
+        }
+        .metric-value {
+            font-weight: bold;
+        }
+        .good {
+            color: #2ecc71;
+        }
+        .warning {
+            color: #f39c12;
+        }
+        .critical {
+            color: #e74c3c;
+        }
+        .chart {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .chart img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Security Governance Executive Dashboard</h1>
+            <p>Generated on: 2026-10-11 15:59:53</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Security Posture Summary</h2>
+                <div class="metric">
+                    <span class="metric-label">Overall Security Posture:</span>
+                    <span class="metric-value good">Good</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Patch Compliance:</span>
+                    <span class="metric-value good">100.0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Vulnerability Remediation Time:</span>
+                    <span class="metric-value good">1.0 days</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Security Incidents (Current Month):</span>
+                    <span class="metric-value good">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Security Monitoring Coverage:</span>
+                    <span class="metric-value good">100.0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Policy Compliance:</span>
+                    <span class="metric-value good">100.0%</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Risk Summary</h2>
+                <div class="metric">
+                    <span class="metric-label">Critical Risks:</span>
+                    <span class="metric-value good">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">High Risks:</span>
+                    <span class="metric-value good">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Medium Risks:</span>
+                    <span class="metric-value warning">2</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Low Risks:</span>
+                    <span class="metric-value good">3</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Risk Acceptance Rate:</span>
+                    <span class="metric-value good">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Average Risk Remediation Time:</span>
+                    <span class="metric-value good">5.2 days</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Compliance Summary</h2>
+                <div class="metric">
+                    <span class="metric-label">Policy Compliance:</span>
+                    <span class="metric-value good">100.0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Control Effectiveness:</span>
+                    <span class="metric-value good">95%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Audit Findings (Open):</span>
+                    <span class="metric-value good">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Regulatory Compliance:</span>
+                    <span class="metric-value good">100%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Security Training Completion:</span>
+                    <span class="metric-value good">98%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Third-Party Risk Assessment:</span>
+                    <span class="metric-value good">100%</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>Patch Compliance Trend</h2>
+                <div class="chart">
+                    <img src="metrics_visualizations/patch_compliance.png" alt="Patch Compliance Trend">
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Vulnerability Remediation Time Trend</h2>
+                <div class="chart">
+                    <img src="metrics_visualizations/vuln_remediation.png" alt="Vulnerability Remediation Time Trend">
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>Security Incidents Trend</h2>
+                <div class="chart">
+                    <img src="metrics_visualizations/security_incidents.png" alt="Security Incidents Trend">
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Security Monitoring Coverage Trend</h2>
+                <div class="chart">
+                    <img src="metrics_visualizations/monitoring_coverage.png" alt="Security Monitoring Coverage Trend">
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>Policy Compliance Trend</h2>
+                <div class="chart">
+                    <img src="metrics_visualizations/policy_compliance.png" alt="Policy Compliance Trend">
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Key Recommendations</h2>
+                <ol>
+                    <li>Maintain current patch management process to ensure continued compliance</li>
+                    <li>Continue monitoring for new vulnerabilities and address them promptly</li>
+                    <li>Conduct regular security awareness training for all employees</li>
+                    <li>Perform quarterly security assessments to identify new risks</li>
+                    <li>Update security policies and procedures annually</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>ICDFA GRC102 - Security Governance Dashboard</p>
+        </div>
+    </div>
+</body>
+</html>

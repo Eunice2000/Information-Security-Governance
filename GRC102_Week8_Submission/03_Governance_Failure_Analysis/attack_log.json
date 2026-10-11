@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-11T15:56:47.051308",
+  "attack_type": "Struts S2-045 Exploitation",
+  "target": "web_server",
+  "success": true,
+  "data_accessed": "customer_data database",
+  "records_affected": 3
+}

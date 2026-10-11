@@ -1,0 +1,4 @@
+NAME                IMAGE                   COMMAND                  SERVICE      CREATED         STATUS         PORTS
+database_server     mysql:5.7               "docker-entrypoint.s…"   database     2 minutes ago   Up 2 minutes   3306/tcp, 33060/tcp
+monitoring_server   ubuntu:20.04            "tail -f /dev/null"      monitoring   2 minutes ago   Up 2 minutes   
+web_server          vulhub/struts2:2.3.30   "/usr/local/bin/mvn-…"   web          2 minutes ago   Up 2 minutes   0.0.0.0:8080->8080/tcp

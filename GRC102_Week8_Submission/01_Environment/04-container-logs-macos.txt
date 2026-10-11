@@ -1,0 +1,101 @@
+time="2026-10-11T15:21:41+01:00" level=warning msg="/Users/macbook/Downloads/security_governance_lab/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+database_server  | 2026-10-11T14:19:28.669025Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+database_server  | 2026-10-11T14:19:28.669149Z 0 [Note] Shutting down plugin 'MEMORY'
+database_server  | 2026-10-11T14:19:28.669337Z 0 [Note] Shutting down plugin 'CSV'
+database_server  | 2026-10-11T14:19:28.669440Z 0 [Note] Shutting down plugin 'sha256_password'
+database_server  | 2026-10-11T14:19:28.669476Z 0 [Note] Shutting down plugin 'mysql_native_password'
+database_server  | 2026-10-11T14:19:28.670316Z 0 [Note] Shutting down plugin 'binlog'
+database_server  | 2026-10-11T14:19:28.674076Z 0 [Note] mysqld: Shutdown complete
+database_server  | 
+database_server  | 2026-10-11 14:19:29+00:00 [Note] [Entrypoint]: Temporary server stopped
+database_server  | 
+web_server       | [INFO] Unable to locate configuration files of the name struts-plugin.xml, skipping
+web_server       | [INFO] Parsing configuration file [struts-plugin.xml]
+web_server       | [INFO] Parsing configuration file [struts.xml]
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+database_server  | 2026-10-11 14:19:29+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+database_server  | 
+database_server  | 2026-10-11T14:19:29.748194Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+database_server  | 2026-10-11T14:19:29.753210Z 0 [Note] mysqld (mysqld 5.7.44) starting as process 1 ...
+database_server  | 2026-10-11T14:19:29.772402Z 0 [Note] InnoDB: PUNCH HOLE support available
+database_server  | 2026-10-11T14:19:29.773045Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+web_server       | [INFO] Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+database_server  | 2026-10-11T14:19:29.773052Z 0 [Note] InnoDB: Uses event mutexes
+database_server  | 2026-10-11T14:19:29.773065Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+database_server  | 2026-10-11T14:19:29.773071Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+database_server  | 2026-10-11T14:19:29.773075Z 0 [Note] InnoDB: Using Linux native AIO
+database_server  | 2026-10-11T14:19:29.777759Z 0 [Note] InnoDB: Number of pools: 1
+database_server  | 2026-10-11T14:19:29.779296Z 0 [Note] InnoDB: Using CPU crc32 instructions
+database_server  | 2026-10-11T14:19:29.785314Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+database_server  | 2026-10-11T14:19:29.905008Z 0 [Note] InnoDB: Completed initialization of buffer pool
+database_server  | 2026-10-11T14:19:29.913764Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+database_server  | 2026-10-11T14:19:29.941342Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+database_server  | 2026-10-11T14:19:29.980190Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+database_server  | 2026-10-11T14:19:29.981006Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+database_server  | 2026-10-11T14:19:30.105131Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+database_server  | 2026-10-11T14:19:30.109001Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+database_server  | 2026-10-11T14:19:30.109015Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+database_server  | 2026-10-11T14:19:30.111809Z 0 [Note] InnoDB: Waiting for purge to start
+database_server  | 2026-10-11T14:19:30.168491Z 0 [Note] InnoDB: 5.7.44 started; log sequence number 12228211
+database_server  | 2026-10-11T14:19:30.172192Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+database_server  | 2026-10-11T14:19:30.175065Z 0 [Note] Plugin 'FEDERATED' is disabled.
+database_server  | 2026-10-11T14:19:30.178471Z 0 [Note] InnoDB: Buffer pool(s) load completed at 261011 14:19:30
+database_server  | 2026-10-11T14:19:30.208060Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+database_server  | 2026-10-11T14:19:30.208269Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+database_server  | 2026-10-11T14:19:30.208327Z 0 [Warning] A deprecated TLS version TLSv1 is enabled. Please use TLSv1.2 or higher.
+database_server  | 2026-10-11T14:19:30.208335Z 0 [Warning] A deprecated TLS version TLSv1.1 is enabled. Please use TLSv1.2 or higher.
+database_server  | 2026-10-11T14:19:30.217045Z 0 [Warning] CA certificate ca.pem is self signed.
+database_server  | 2026-10-11T14:19:30.217702Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+database_server  | 2026-10-11T14:19:30.219049Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+database_server  | 2026-10-11T14:19:30.219820Z 0 [Note] IPv6 is available.
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+web_server       | [INFO] Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+database_server  | 2026-10-11T14:19:30.220260Z 0 [Note]   - '::' resolves to '::';
+database_server  | 2026-10-11T14:19:30.220440Z 0 [Note] Server socket created on IP: '::'.
+database_server  | 2026-10-11T14:19:30.222193Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+database_server  | 2026-10-11T14:19:30.243043Z 0 [Note] Event Scheduler: Loaded 0 events
+database_server  | 2026-10-11T14:19:30.243931Z 0 [Note] mysqld: ready for connections.
+web_server       | [INFO] Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+web_server       | [INFO] Loading global messages from [global]
+web_server       | [INFO] Started o.e.j.m.p.JettyWebAppContext@4c98a6d5{/,file:/usr/src/src/main/webapp/,AVAILABLE}{file:/usr/src/src/main/webapp/}
+web_server       | [WARNING] !RequestLog
+web_server       | [INFO] Started ServerConnector@77b919a3{HTTP/1.1}{0.0.0.0:8080}
+web_server       | [INFO] Started @7577ms
+web_server       | [INFO] Started Jetty Server
+database_server  | Version: '5.7.44'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+web_server       | [INFO] Starting scanner at interval of 10 seconds.

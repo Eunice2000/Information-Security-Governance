@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  web:
+    image: vulhub/struts2:2.3.30
+    container_name: web_server
+    ports:
+      - "8080:8080"
+    networks:
+      - secgov_network
+
+  database:
+    image: mysql:5.7
+    container_name: database_server
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: customer_data
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: app_password
+    volumes:
+      - ./database_init:/docker-entrypoint-initdb.d
+    networks:
+      - secgov_network
+
+  monitoring:
+    image: ubuntu:20.04
+    container_name: monitoring_server
+    volumes:
+      - ./monitoring:/monitoring
+    command: tail -f /dev/null
+    networks:
+      - secgov_network
+
+networks:
+  secgov_network:
+    external: true

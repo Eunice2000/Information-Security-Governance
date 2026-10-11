@@ -1,0 +1,226 @@
+{
+  "policies": [
+    {
+      "id": "POL-001",
+      "name": "Patch Management Policy",
+      "description": "Policy governing the timely application of security patches",
+      "owner": "CISO",
+      "approval_date": "2023-01-15",
+      "review_date": "2024-01-15",
+      "status": "Active"
+    },
+    {
+      "id": "POL-002",
+      "name": "Vulnerability Management Policy",
+      "description": "Policy governing the identification and remediation of security vulnerabilities",
+      "owner": "Security Director",
+      "approval_date": "2023-02-10",
+      "review_date": "2024-02-10",
+      "status": "Active"
+    },
+    {
+      "id": "POL-003",
+      "name": "Incident Response Policy",
+      "description": "Policy governing the response to security incidents",
+      "owner": "CISO",
+      "approval_date": "2023-03-05",
+      "review_date": "2024-03-05",
+      "status": "Active"
+    },
+    {
+      "id": "POL-004",
+      "name": "Security Governance Oversight",
+      "description": "Policy defining security governance roles, responsibilities, and oversight",
+      "owner": "CEO",
+      "approval_date": "2026-10-11",
+      "review_date": "2027-10-11",
+      "status": "Active"
+    }
+  ],
+  "controls": [
+    {
+      "id": "CTL-001",
+      "name": "Patch Management Process",
+      "description": "Process for identifying, testing, and applying security patches",
+      "policy_id": "POL-001",
+      "owner": "IT Manager",
+      "implementation_date": "2023-01-20",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-002",
+      "name": "Vulnerability Scanning",
+      "description": "Regular scanning for security vulnerabilities",
+      "policy_id": "POL-002",
+      "owner": "Security Engineer",
+      "implementation_date": "2023-02-15",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-003",
+      "name": "Incident Response Team",
+      "description": "Team responsible for responding to security incidents",
+      "policy_id": "POL-003",
+      "owner": "Security Director",
+      "implementation_date": "2023-03-10",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-004",
+      "name": "Automated Patch Management",
+      "description": "Automated system for identifying, testing, and applying security patches",
+      "policy_id": "POL-001",
+      "owner": "Security Engineer",
+      "implementation_date": "2026-10-11",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-005",
+      "name": "Network Segmentation",
+      "description": "Implementation of network segmentation according to least privilege principle",
+      "policy_id": "POL-001",
+      "owner": "Network Engineer",
+      "implementation_date": "2026-10-11",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-006",
+      "name": "Database Security",
+      "description": "Implementation of strong authentication and access controls for databases",
+      "policy_id": "POL-001",
+      "owner": "Database Administrator",
+      "implementation_date": "2026-10-11",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-007",
+      "name": "Real-time Security Monitoring",
+      "description": "Implementation of real-time security monitoring and alerting",
+      "policy_id": "POL-001",
+      "owner": "Security Engineer",
+      "implementation_date": "2026-10-11",
+      "status": "Implemented"
+    },
+    {
+      "id": "CTL-008",
+      "name": "Executive Security Oversight",
+      "description": "Implementation of executive and board oversight of security program",
+      "policy_id": "POL-004",
+      "owner": "CEO",
+      "implementation_date": "2026-10-11",
+      "status": "Implemented"
+    }
+  ],
+  "risks": [
+    {
+      "id": "RISK-001",
+      "name": "Unpatched Vulnerabilities",
+      "description": "Risk of exploitation due to unpatched vulnerabilities",
+      "likelihood": "High",
+      "impact": "High",
+      "risk_level": "Critical",
+      "owner": "Security Engineer",
+      "mitigation_plan": "Implement automated patch management system",
+      "status": "Open"
+    },
+    {
+      "id": "RISK-002",
+      "name": "Insufficient Network Segmentation",
+      "description": "Risk of lateral movement due to insufficient network segmentation",
+      "likelihood": "Medium",
+      "impact": "High",
+      "risk_level": "High",
+      "owner": "Network Engineer",
+      "mitigation_plan": "Implement network segmentation according to least privilege principle",
+      "status": "Open"
+    },
+    {
+      "id": "RISK-003",
+      "name": "Weak Authentication",
+      "description": "Risk of unauthorized access due to weak authentication",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "risk_level": "Medium",
+      "owner": "Identity Manager",
+      "mitigation_plan": "Implement multi-factor authentication",
+      "status": "Open"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-001",
+      "name": "Web Server Compromise",
+      "description": "Compromise of web server due to unpatched Struts vulnerability",
+      "date": "2023-04-15",
+      "severity": "High",
+      "affected_systems": "Web Server",
+      "root_cause": "Unpatched Struts vulnerability (CVE-2017-5638)",
+      "resolution": "Patched vulnerability and restored from backup",
+      "status": "Closed"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "MET-001",
+      "name": "Patch Compliance",
+      "description": "Percentage of systems with all critical patches applied",
+      "target": 95.0,
+      "actual": 85.0,
+      "period": "May 2023",
+      "trend": "Improving",
+      "status": "Active"
+    },
+    {
+      "id": "MET-002",
+      "name": "Vulnerability Remediation Time",
+      "description": "Average time to remediate critical vulnerabilities (days)",
+      "target": 7.0,
+      "actual": 12.0,
+      "period": "May 2023",
+      "trend": "Declining",
+      "status": "Active"
+    },
+    {
+      "id": "MET-003",
+      "name": "Security Incidents",
+      "description": "Number of security incidents in the period",
+      "target": 0.0,
+      "actual": 1.0,
+      "period": "May 2023",
+      "trend": "Stable",
+      "status": "Active"
+    },
+    {
+      "id": "MET-004",
+      "name": "Critical Patch Compliance",
+      "description": "Percentage of systems with critical patches applied within 7 days",
+      "target": 100.0,
+      "actual": 100.0,
+      "period": "October 2026",
+      "trend": "Improved",
+      "status": "Active"
+    },
+    {
+      "id": "MET-005",
+      "name": "Security Monitoring Coverage",
+      "description": "Percentage of critical systems covered by security monitoring",
+      "target": 100.0,
+      "actual": 100.0,
+      "period": "October 2026",
+      "trend": "Improved",
+      "status": "Active"
+    }
+  ],
+  "audits": [
+    {
+      "id": "AUD-001",
+      "name": "Annual Security Audit",
+      "description": "Comprehensive audit of security controls",
+      "date": "2023-05-01",
+      "auditor": "External Auditor",
+      "findings": "Several findings related to patch management and network segmentation",
+      "recommendations": "Improve patch management process and implement network segmentation",
+      "status": "Completed"
+    }
+  ]
+}
