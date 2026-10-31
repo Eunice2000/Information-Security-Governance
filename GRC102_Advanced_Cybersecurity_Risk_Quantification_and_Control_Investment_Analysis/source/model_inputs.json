@@ -1,0 +1,33 @@
+{
+  "student": "Adediran Eunice Adebukola",
+  "registration": "C11-26-CGRCE-17595",
+  "scenario": "SecureBank Financial - SecureMobile",
+  "source": "Lab 3b: Advanced Cybersecurity Risk Quantification (official uploaded brief)",
+  "assumptions": {
+    "annual_single_event_probability": true,
+    "max_modelled_events_per_year": 1,
+    "realised_fraction_of_max_loss": 1.0,
+    "evaluation_years": 1,
+    "critical_ale_threshold": 10000000,
+    "high_ale_threshold": 1000000,
+    "probability_band_thresholds": [0.20, 0.35],
+    "impact_band_thresholds": [1000000, 10000000],
+    "deployment_days": {"WAF": 30, "MFA": 90, "API gateway": 180}
+  },
+  "risks": [
+    {"id":"R1","name":"API authentication bypass","probability":0.15,"max_loss":5000000,"unit_count":null,"loss_per_unit":null,"detail":"Potential unauthorised transfers; 48-hour estimated detection"},
+    {"id":"R2","name":"Database injection","probability":0.25,"max_loss":125000000,"unit_count":500000,"loss_per_unit":250,"detail":"500,000 records at $250 per record"},
+    {"id":"R3","name":"Session hijacking","probability":0.40,"max_loss":7500000,"unit_count":5000,"loss_per_unit":1500,"detail":"5,000 accounts at $1,500 per account"}
+  ],
+  "controls": [
+    {"id":"C1","name":"Advanced API security gateway","short":"API gateway","risk_id":"R1","initial":350000,"maintenance_annual":50000,"effectiveness":0.90,"go_live_day":180,"owner":"API Platform / AppSec"},
+    {"id":"C2","name":"Web application firewall","short":"WAF","risk_id":"R2","initial":150000,"maintenance_annual":25000,"effectiveness":0.75,"go_live_day":30,"owner":"AppSec / Network Security"},
+    {"id":"C3","name":"Enhanced MFA","short":"MFA","risk_id":"R3","initial":200000,"maintenance_annual":30000,"effectiveness":0.95,"go_live_day":90,"owner":"IAM / Mobile Engineering"}
+  ],
+  "control_applicability_assumptions": [
+    "API gateway effectiveness is applied to authentication bypass, although an API gateway alone may not correct an application-level authorisation flaw.",
+    "WAF effectiveness is applied to database injection only if the attack traverses the web/API inspection point; WAF is a compensating control, not a substitute for parameterised queries.",
+    "MFA effectiveness is applied to session hijacking/account takeover; MFA alone may not stop theft or replay of an already authenticated session.",
+    "Control benefits are mapped one-to-one to prevent double counting; efficacy and coverage require technical validation."
+  ]
+}
