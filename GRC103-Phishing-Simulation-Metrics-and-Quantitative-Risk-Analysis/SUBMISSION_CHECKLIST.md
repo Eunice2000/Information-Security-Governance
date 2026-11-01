@@ -14,6 +14,3 @@
 | Bonus break-even calculation | `CALCULATIONS_AND_ASSUMPTIONS.md`, briefing appendix | Complete |
 | Source corrections and modelling limitations | Excel `Source Reconciliation`, calculations guide | Complete |
 | Student name / registration | README, workbook / PDF footer | Complete |
-| GitHub link | Push repository to GitHub | Pending user publication |
-
-**Before submission:** Verify all formulas and conclusions in Excel, inspect PDF figures, confirm the course accepts GitHub links, and ensure the repository visibility permits instructor access.
