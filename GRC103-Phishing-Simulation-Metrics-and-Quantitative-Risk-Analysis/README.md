@@ -39,4 +39,4 @@ ROI calculations assume a **one-year evaluation horizon**, initial implementatio
 
 ## Academic integrity
 
-The numerical source data comes from the supplied Lab 3A assignment, not an actual live phishing campaign. Calculations and financial projections are modelled classroom scenarios. AI assistance was used to structure the analysis, create formulas, charts and draft the reports; the student should independently verify and be able to explain every calculation before submission.
+The numerical source data comes from the supplied Lab 3A assignment, not an actual live phishing campaign. Calculations and financial projections are modelled classroom scenarios.
