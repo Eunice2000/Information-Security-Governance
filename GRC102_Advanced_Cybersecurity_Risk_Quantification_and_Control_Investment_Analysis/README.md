@@ -81,8 +81,4 @@ The Python script regenerates the nine chart PNGs and both PDFs from `source/mod
 
 ## Academic integrity and sources
 
-The financial and technical inputs come from the user-provided **"Lab 3b: Advanced Cybersecurity Risk Quantification"** brief and the instructor's **"Laboratory guidance"** screenshot. All additional assumptions are explicitly identified. AI assistance was used for structuring, spreadsheet and chart generation, calculations, and drafting; the student should review, verify, and be able to explain the entire submission before presenting it as their work.
-
-## GitHub submission
-
-The final deliverable for the learning portal is the URL of the GitHub repository containing this folder. Create the repository under your GitHub account and push these files. The repository URL **cannot be supplied until it is actually published**. If the instructor needs to access a private repository, invite the instructor as a collaborator; otherwise confirm the course's visibility requirements before making it public. Note that a public repository exposes the student name and registration number in these files.
+The financial and technical inputs come from the user-provided **"Lab 3b: Advanced Cybersecurity Risk Quantification"** brief and the instructor's **"Laboratory guidance"** screenshot. All additional assumptions are explicitly identified.
