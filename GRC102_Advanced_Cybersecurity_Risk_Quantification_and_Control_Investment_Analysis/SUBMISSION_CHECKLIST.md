@@ -17,6 +17,3 @@
 - [x] Risk treatment plan and Gantt chart for 30 days, 90 days and one year.
 - [x] Assumptions, equations, scenario limitations and traceable data sources.
 - [x] Bonus: combined control economics and illustrative budget-constrained options.
-- [ ] Student to open and review workbook/PDF locally; confirm their understanding.
-- [ ] Student to push repository to GitHub and confirm instructor access.
-- [ ] Student to submit actual GitHub repository URL on the learning portal.
