@@ -24,9 +24,13 @@ A single lab interaction was performed to test tracking. These are **simulated e
 
 - [Phishing Risk Assessment and Executive Summary](Report/Phishing_Risk_Assessment_and_Executive_Summary.md) — methodology, quantitative results, risk analysis, control assessment, recommendations, and limitations.
 - [Campaign Results Summary](Supporting_Data/Campaign_Results_Summary.csv) — summary of the five GoPhish dashboard metrics.
-- [Final Campaign Results Screenshot](Screenshots/Selected_Evidence/Final_Campaign_Results.png) — cropped dashboard evidence of 5 sent, 1 opened, 1 clicked, 1 fictional data submission and 0 reports.
+- [Final Campaign Results Screenshot](Screenshots/Selected_Evidence/01-final-gophish-dashboard.png) — full screenshot of 5 sent, 1 opened, 1 clicked, 1 fictional data submission and 0 reports.
+- [Selected Screenshots](Screenshots/Selected_Evidence/) — seven key evidence screenshots, plus the existing cropped dashboard image.
+- [Complete Lab Capture](Screenshots/Complete_Lab_Capture/) — 60 chronological screenshots documenting the lab.
+- [Final PDF Report](Report/GRC103_Phishing_Simulation_Adediran_Eunice_Adebukola_C11-26-CGRCE-17595.pdf) — compiled assessment and recommendations.
+- [Editable Report](Report/GRC103_Phishing_Simulation_Adediran_Eunice_Adebukola_C11-26-CGRCE-17595.docx) — Word version.
 
-The final GoPhish campaign-results screenshot is available above. The full-sized original screenshot, PDF, editable Word report and the rest of the chronological lab screenshots remain in the separately prepared local evidence package and have not yet been uploaded to this repository.
+All 60 chronological lab screenshots and seven selected evidence screenshots have been uploaded and are available in the `Screenshots/` directory. The final PDF and editable Word report are also included in `Report/`. The final CSV re-export remains on the Kali VM; the `Supporting_Data/` folder contains the verified aggregate metrics and a file checksum manifest.
 
 ## Lab configuration
 
