@@ -1,36 +1,41 @@
 # GRC103 — Social Engineering and Phishing Campaign Simulation
 
 **Student:** Adediran Eunice Adebukola  
-**Registration Number:** C11-26-CGRCE-17595  
-**Lab Date:** 8 November 2026
+**Registration number:** C11-26-CGRCE-17595  
+**Lab date:** 8 November 2026
 
 ## Overview
 
-This practical demonstrates the configuration, execution and analysis of a controlled GoPhish simulation on a Kali Linux VM. Five fictional lab identities were used with a local SMTP capture service and a loopback-only landing page.
+This practical covers the setup, execution and governance assessment of a controlled GoPhish phishing-awareness simulation. The test used five fictional recipients, a local SMTP capture listener and a loopback-only training landing page. No real staff members or credentials were involved.
 
-## Campaign results
+## Recorded results
 
-| Metric | Count | Share of 5 lab identities |
+| Metric | Events | Rate |
 |---|---:|---:|
-| Emails recorded as sent | 5 | 100% |
+| Emails sent to local SMTP capture | 5 | 100% |
 | Opens recorded | 1 | 20% |
 | Clicks recorded | 1 | 20% |
-| Fictional reference submitted | 1 | 20% |
+| Fictional lab reference submissions | 1 | 20% |
 | Reports recorded | 0 | 0% |
 
-The recorded open, click and form submission resulted from deliberate local functional testing. They do not measure real employee susceptibility or external email delivery. No real passwords or personnel were involved.
+A single lab interaction was performed to test tracking. These are **simulated event rates**, not evidence of workforce phishing susceptibility, credential loss or delivery to external inboxes.
 
-## Contents
+## Report and evidence
 
-- `Report/` — final report in PDF and editable DOCX, including risk assessment table and executive recommendations.
-- `Screenshots/Selected_Evidence/` — seven principal screenshots.
-- `Screenshots/Complete_Lab_Capture/` — 60 additional screenshots showing the lab workflow in chronological order, stored as compact JPEGs.
-- `Supporting_Data/` — evidence file manifest and notes about the exported CSV.
+- [Phishing Risk Assessment and Executive Summary](Report/Phishing_Risk_Assessment_and_Executive_Summary.md) — methodology, quantitative results, risk analysis, control assessment, recommendations, and limitations.
+- [Campaign Results Summary](Supporting_Data/Campaign_Results_Summary.csv) — summary of the five GoPhish dashboard metrics.
 
-## Lab implementation
+The original campaign dashboard screenshot, final PDF and editable Word report are part of the locally prepared evidence package and will be added to the corresponding folders as binary files. The complete lab capture contains 60 timestamped screenshots, with 7 key evidence images selected for the final report.
 
-- GoPhish admin interface: `127.0.0.1:3333`
-- GoPhish landing page: `127.0.0.1:8080`
-- Local SMTP capture: `127.0.0.1:1025`
+## Lab configuration
 
-The results and interpretation are based on the observed local GoPhish dashboard. The five identities were fictional, and the submitted value was a fictional lab reference, not a password.
+| Component | Configuration |
+|---|---|
+| Virtual machine | Kali Linux, UTM |
+| Administration | `127.0.0.1:3333` |
+| Landing page | `127.0.0.1:8080` |
+| SMTP capture | `127.0.0.1:1025` |
+| Simulation | HR benefits record review |
+| Form input | Fictional lab reference only |
+
+The demonstration confirms local campaign delivery to the SMTP capture service and event tracking; it does not evaluate an enterprise security awareness programme.
