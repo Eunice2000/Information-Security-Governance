@@ -1,0 +1,6 @@
+metric,count,denominator,percent,interpretation
+Emails Sent,5,5,100,Local SMTP capture only
+Email Opened,1,5,20,Controlled simulated event
+Clicked Link,1,5,20,Controlled simulated event
+Submitted Data,1,5,20,Fictional lab reference only
+Email Reported,0,5,0,No human reporting test
