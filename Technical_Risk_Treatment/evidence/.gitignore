@@ -1,0 +1,5 @@
+# Keep raw VM evidence archives local
+*.tar.gz
+
+# Publish reviewed log copies only
+ubuntu/grc-ubuntu-evidence/logs/

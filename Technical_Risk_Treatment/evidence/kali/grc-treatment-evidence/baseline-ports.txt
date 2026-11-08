@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Sun Nov  8 20:05:09 2026 as: /usr/lib/nmap/nmap --privileged -sT -p 80,8080 -oN baseline-ports.txt 192.168.128.5
+Nmap scan report for 192.168.128.5
+Host is up (0.00081s latency).
+
+PORT     STATE SERVICE
+80/tcp   open  http
+8080/tcp open  http-proxy
+MAC Address: C6:EA:65:DB:5B:48 (Unknown)
+
+# Nmap done at Sun Nov  8 20:05:13 2026 -- 1 IP address (1 host up) scanned in 4.12 seconds

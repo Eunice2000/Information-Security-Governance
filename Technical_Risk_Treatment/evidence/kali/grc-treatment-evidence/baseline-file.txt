@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sun, 08 Nov 2026 19:05:39 GMT
+Content-Type: text/plain
+Content-Length: 33
+Last-Modified: Sun, 08 Nov 2026 18:34:16 GMT
+Connection: keep-alive
+ETag: "6af0c0a8-21"
+Accept-Ranges: bytes
+
+Dummy record A001-training only 

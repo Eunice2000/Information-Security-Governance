@@ -1,0 +1,6 @@
+*   Trying 192.168.128.5:80...
+* Name '192.168.128.11' family 2 resolved to '192.168.128.11' family 2
+* Local port: 0
+* Connection timed out after 5002 milliseconds
+* closing connection #0
+curl: (28) Connection timed out after 5002 milliseconds

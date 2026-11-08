@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sun, 08 Nov 2026 19:12:10 GMT
+Content-Type: text/html
+Content-Length: 25
+Last-Modified: Sun, 08 Nov 2026 18:33:07 GMT
+Connection: keep-alive
+ETag: "6af0c063-19"
+Accept-Ranges: bytes
+
+approved internal portal
