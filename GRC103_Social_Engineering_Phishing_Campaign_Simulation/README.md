@@ -24,8 +24,9 @@ A single lab interaction was performed to test tracking. These are **simulated e
 
 - [Phishing Risk Assessment and Executive Summary](Report/Phishing_Risk_Assessment_and_Executive_Summary.md) — methodology, quantitative results, risk analysis, control assessment, recommendations, and limitations.
 - [Campaign Results Summary](Supporting_Data/Campaign_Results_Summary.csv) — summary of the five GoPhish dashboard metrics.
+- [Final Campaign Results Screenshot](Screenshots/Selected_Evidence/Final_Campaign_Results.png) — cropped dashboard evidence of 5 sent, 1 opened, 1 clicked, 1 fictional data submission and 0 reports.
 
-The original campaign dashboard screenshot, final PDF and editable Word report are part of the locally prepared evidence package and will be added to the corresponding folders as binary files. The complete lab capture contains 60 timestamped screenshots, with 7 key evidence images selected for the final report.
+The final GoPhish campaign-results screenshot is available above. The full-sized original screenshot, PDF, editable Word report and the rest of the chronological lab screenshots remain in the separately prepared local evidence package and have not yet been uploaded to this repository.
 
 ## Lab configuration
 
